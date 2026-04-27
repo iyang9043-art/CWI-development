@@ -1,0 +1,47 @@
+{
+  "type": "darkerdepths:correspondent_layer",
+  "config": {
+    "depth": 1,
+    "extra_bottom_block_chance": 0.0,
+    "extra_edge_column_chance": 0.3,
+    "layers": [
+      {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "darkerdepths:darkslate"
+        }
+      },
+      {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "darkerdepths:darkslate",
+          "Properties": {
+            "axis": "y"
+          }
+        }
+      },
+      {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "darkerdepths:darkslate"
+        }
+      }
+    ],
+    "replaceable": "#darkerdepths:arid_ground",
+    "surface": "floor",
+    "vegetation_chance": 0.003,
+    "vegetation_feature": {
+      "feature": "darkerdepths:darkslate_vegetation",
+      "placement": []
+    },
+    "vertical_range": 5,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "max_inclusive": 7,
+        "min_inclusive": 4
+      }
+    },
+    "xz_replace": false
+  }
+}

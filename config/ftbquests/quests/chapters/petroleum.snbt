@@ -1,0 +1,465 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "petroleum"
+	group: ""
+	icon: "kubejs:petroleum_manual"
+	id: "6B5540E8E19227B7"
+	images: [
+		{
+			height: 1.33d
+			image: "tfmg:block/cast_iron_vat_top"
+			rotation: 0.0d
+			width: 1.33d
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			height: 1.33d
+			image: "tfmg:block/plastic_block"
+			rotation: 0.0d
+			width: 1.33d
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/heavy_machinery_casing"
+			rotation: 45.0d
+			width: 1.0d
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/heavy_machinery_casing"
+			rotation: 45.0d
+			width: 1.0d
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			height: 1.33d
+			image: "kubejs:block/polyvinyl_chloride_plastic_block"
+			rotation: 0.0d
+			width: 1.33d
+			x: 10.0d
+			y: -4.0d
+		}
+	]
+	order_index: 10
+	quest_links: [ ]
+	quests: [
+		{
+			id: "23BC2F1468912FE3"
+			invisible: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3781ED6D058AF3D4"
+				item: "kubejs:petroleum_manual"
+				type: "item"
+			}]
+			title: "Petroleum Engineering"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23BC2F1468912FE3"]
+			hide_dependency_lines: true
+			id: "71A1E5FE72C80780"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "34FCFBD4406B91FC"
+					item: "tfmg:steel_distillation_controller"
+					type: "item"
+				}
+				{
+					id: "4A83B85C6E4339F6"
+					item: "tfmg:steel_distillation_output"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23BC2F1468912FE3"]
+			hide_dependency_lines: true
+			id: "2C6354E880DA2306"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2791740E15443EAF"
+					item: "tfmg:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "1CCEEC943DAAD2BE"
+					item: "tfmg:machine_input"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["23BC2F1468912FE3"]
+			hide_dependency_lines: true
+			id: "0994F189C3CEA26E"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "0FCBECA9008AF67B"
+					item: "tfmg:pumpjack_hammer_part"
+					type: "item"
+				}
+				{
+					id: "3D714F031C3B5A33"
+					item: "tfmg:pumpjack_hammer_head"
+					type: "item"
+				}
+				{
+					id: "60F5DAE221827F19"
+					item: "tfmg:pumpjack_hammer_connector"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23BC2F1468912FE3"]
+			hide_dependency_lines: true
+			id: "6B70EE9075BB5385"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "3976BC13927BFCE5"
+					item: "tfmg:pumpjack_base"
+					type: "item"
+				}
+				{
+					id: "322410D19F88F967"
+					item: "tfmg:pumpjack_hammer"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23BC2F1468912FE3"]
+			hide_dependency_lines: true
+			id: "25D0B69D3F5EBC20"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "45F18F8F3DD35A05"
+				item: "tfmg:surface_scanner"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44136ADDCD8EAD4F"]
+			id: "307A621A21A3E63C"
+			shape: "square"
+			tasks: [{
+				id: "3313BA3E37382037"
+				item: "tfmg:plastic_sheet"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2C6354E880DA2306"
+				"0994F189C3CEA26E"
+				"6B70EE9075BB5385"
+				"25D0B69D3F5EBC20"
+			]
+			id: "2BB7B30F3B59D458"
+			tasks: [{
+				id: "09779C51FD5BF919"
+				item: "tfmg:crude_oil_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21FEFC379E961856"]
+			id: "28F5C1BA9431AF60"
+			tasks: [{
+				id: "7DC916E7F2D0EBDA"
+				item: "tfmg:naphtha_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2BB7B30F3B59D458"
+				"71A1E5FE72C80780"
+			]
+			id: "21FEFC379E961856"
+			tasks: [{
+				id: "1B15A5947CB8F997"
+				item: "tfmg:heavy_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["21FEFC379E961856"]
+			id: "301441864FC92B6B"
+			shape: "square"
+			tasks: [{
+				id: "436EA8CE3140970E"
+				item: "tfmg:rubber_sheet"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["301441864FC92B6B"]
+			id: "1A19C3A9645CFCFF"
+			tasks: [{
+				id: "365F161193EF417A"
+				item: "tfmg:synthetic_leather"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["21FEFC379E961856"]
+			id: "7D310A7F3C5FC0EF"
+			tasks: [{
+				id: "2FD7717FA4A2C13F"
+				item: "tfmg:bitumen"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D310A7F3C5FC0EF"]
+			id: "6E443BA43458D311"
+			tasks: [{
+				id: "5640B425E24B26E8"
+				item: "tfmg:asphalt_mixture"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6E443BA43458D311"
+				"21452C657A24CE17"
+			]
+			id: "6182694F6CB2E60A"
+			tasks: [{
+				id: "1C8CF0EB08FC4EE3"
+				item: "tfmg:asphalt"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3DB9E5F294FAFF09"]
+			id: "093025BD51F9AE36"
+			shape: "diamond"
+			tasks: [{
+				id: "1A26B7A2462B19BF"
+				item: "tfmg:napalm_potato"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3DB9E5F294FAFF09"]
+			id: "3B660F7A6A01F864"
+			shape: "diamond"
+			tasks: [{
+				id: "79B9416FC88C852E"
+				item: "tfmg:napalm_bomb"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6B3B0E0C4983791F"]
+			id: "3DB9E5F294FAFF09"
+			tasks: [{
+				id: "17A57557DDC12D91"
+				item: "tfmg:napalm_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2BB7B30F3B59D458"]
+			id: "6B3B0E0C4983791F"
+			tasks: [{
+				id: "059B563E7C8F20F3"
+				item: "tfmg:gasoline_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21FEFC379E961856"]
+			id: "7E496F23593AA01F"
+			tasks: [{
+				id: "184655FC37C9735C"
+				item: "tfmg:lubrication_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["301441864FC92B6B"]
+			hide_dependency_lines: true
+			id: "21452C657A24CE17"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "33D691AC76DE63D7"
+				item: "tfmg:concrete_hose"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["307A621A21A3E63C"]
+			id: "016E8D66E5C67081"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7D8F60C33D8D3387"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7E496F23593AA01F"]
+			id: "504E3CD0908F07C3"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6D765EE09DC88032"
+				item: "kubejs:engine_cylinder"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["28F5C1BA9431AF60"]
+			id: "49ACE7B6A81987AA"
+			tasks: [{
+				id: "7D17880A3C2D58CE"
+				item: "tfmg:ethylene_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28F5C1BA9431AF60"]
+			hide_dependent_lines: true
+			id: "3FD32B9970D4E3D9"
+			tasks: [{
+				id: "246CD4E629D90A01"
+				item: "tfmg:propylene_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49ACE7B6A81987AA"]
+			id: "56CD87E991F1847E"
+			tasks: [{
+				id: "3CFB16199DA6D382"
+				item: "kubejs:polyvinyl_chloride_plastic_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"49ACE7B6A81987AA"
+				"3FD32B9970D4E3D9"
+			]
+			dependency_requirement: "one_completed"
+			id: "44136ADDCD8EAD4F"
+			tasks: [{
+				id: "555C2227885B80DA"
+				item: "tfmg:molten_plastic_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["49ACE7B6A81987AA"]
+			hide_dependency_lines: true
+			id: "7095658F1B054ED5"
+			tasks: [{
+				id: "41A32029B02A6559"
+				item: "tfmg:cooling_fluid_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["56CD87E991F1847E"]
+			id: "6BED6C70FDA0D4A7"
+			shape: "square"
+			tasks: [{
+				id: "0CC27DE2339BCB98"
+				item: "kubejs:polyvinyl_chloride_plastic_sheet"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["301441864FC92B6B"]
+			id: "1C259AB093CFCFCE"
+			tasks: [{
+				id: "25AEF7E661C4C0AE"
+				item: "tfmg:synthetic_string"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+	]
+	title: "Underground treasures"
+}

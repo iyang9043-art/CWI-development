@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createaddition:block/fluid_fuel_burner"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"6": "create:block/mechanical_press_head",
+		"particle": "vintageimprovements:block/lathe_casing"
+	},
+	"elements": [
+		{
+			"name": "RotatingHead",
+			"from": [5, 5, 6],
+			"to": [11, 11, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8.75]},
+			"faces": {
+				"east": {"uv": [3, 0, 9, 3], "rotation": 270, "texture": "#6"},
+				"south": {"uv": [3, 7, 9, 13], "texture": "#6"},
+				"west": {"uv": [3, 0, 9, 3], "rotation": 90, "texture": "#6"},
+				"up": {"uv": [3, 3, 9, 0], "texture": "#6"},
+				"down": {"uv": [3, 0, 9, 3], "texture": "#6"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "Heads",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

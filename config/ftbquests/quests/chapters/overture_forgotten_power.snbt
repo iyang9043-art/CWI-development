@@ -1,0 +1,479 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overture_forgotten_power"
+	group: ""
+	icon: "kubejs:computer_heat_vent"
+	id: "48D40525EA37660A"
+	images: [
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/milky_way/leo_minor.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/terra/gemini.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/terra/cetus.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/terra/centaurus.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/kaliem/kaliem_31_c.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/milky_way/scorpio.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			height: 1.0d
+			image: "sgjourney:textures/symbols/milky_way/kaliem/kaliem_17.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			height: 1.5d
+			image: "create:block/experience_block"
+			rotation: 0.0d
+			width: 1.5d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/particle/sonic_boom_10.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: -3.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["&6My head is pounding... The last thing I remember is... Nothing...&r\n\n&eJust a blinding light, and then this... this silent, metallic tomb. Dust hangs thick in the still air, catching the sickly red pulse of a single, dying light. It's cold. The only sounds are the creak of settling metal and my own ragged breath. &r\n\n&6Everything is broken—shattered glass, toppled lantern, rebars sticking from the wall like dead vines.&r"]
+			hide_until_deps_complete: true
+			icon: "kubejs:computer_heat_vent"
+			id: "48FAA6DBC81EED3F"
+			shape: "gear"
+			size: 2.5d
+			subtitle: "Where Am I?"
+			tasks: [{
+				dimension: "minecraft:overworld"
+				id: "559365AE1AFEB82A"
+				type: "dimension"
+			}]
+			title: "A Derelict Laboratory"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48FAA6DBC81EED3F"]
+			id: "737A920A90D7A43F"
+			size: 1.5d
+			subtitle: "Basic Tools and Food For Survival"
+			tasks: [{
+				icon: "minecraft:chest"
+				id: "1E5E40244B833B19"
+				observe_type: 0
+				timer: 0L
+				to_observe: "minecraft:chest"
+				type: "observation"
+			}]
+			title: "Survival Supplies"
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["48FAA6DBC81EED3F"]
+			description: ["&6Admire the wisdom of the ancients and appreciate their pinnacle achievements in science and technology.&r"]
+			icon: "sgjourney:universe_stargate"
+			id: "1206CB23534B30CD"
+			size: 1.5d
+			subtitle: "Caress The Ancient Apparatus"
+			tasks: [{
+				icon: "sgjourney:universe_stargate"
+				id: "4421C5120E517A15"
+				observe_type: 0
+				timer: 0L
+				to_observe: "sgjourney:universe_stargate"
+				type: "observation"
+			}]
+			title: "The Stargate"
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "22E7A8175E59CF13"
+			tasks: [{
+				id: "69AFB6CBE2EF23AA"
+				item: {
+					Count: 1
+					id: "kubejs:rusted_iron_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "5E4DE9E833C9C2DA"
+			tasks: [{
+				id: "273F865B7B73669D"
+				item: {
+					Count: 1
+					id: "kubejs:rusted_iron_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "7DF378D01AB247E2"
+			tasks: [{
+				id: "68D4543D44CB154F"
+				item: {
+					Count: 1
+					id: "kubejs:rusted_iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "781CBC788184EF67"
+			tasks: [{
+				id: "1B2ECDDA2B140F0F"
+				item: {
+					Count: 1
+					id: "kubejs:rusted_iron_shovel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "6FD0D927965EF699"
+			tasks: [{
+				id: "3DA2E058DAA4B31D"
+				item: {
+					Count: 1
+					id: "kubejs:rusted_iron_hoe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			icon: "miners_delight:baked_cave_carrot"
+			id: "5B36FDD15F527D57"
+			subtitle: "Basic Food Supply"
+			tasks: [
+				{
+					id: "2391B1D9755A1F41"
+					item: "miners_delight:baked_cave_carrot"
+					type: "item"
+				}
+				{
+					id: "62A21AFEAFE74255"
+					item: "miners_delight:cave_carrot"
+					type: "item"
+				}
+				{
+					id: "458C73A6894765FA"
+					item: "kubejs:smoked_spider_meat"
+					type: "item"
+				}
+				{
+					id: "3D1415058361A086"
+					item: "kubejs:silverfish_abdomen"
+					type: "item"
+				}
+				{
+					id: "58C304C48FF7076B"
+					item: "miners_delight:silverfish_eggs"
+					type: "item"
+				}
+			]
+			title: "Basic Foods"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			icon: "create:goggles"
+			id: "350604D826FB8C8B"
+			subtitle: "Give You Better Control Over Your Factory"
+			tasks: [
+				{
+					id: "1BA6ED8CD76DC77F"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "4F70A7C627D70C40"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "Engineering Tools"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "1DA273BCC6892499"
+			subtitle: "The Best Storage at the Beginning"
+			tasks: [{
+				id: "047936149C64040E"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "Backpack"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["737A920A90D7A43F"]
+			disable_toast: true
+			id: "182462AD7FF16BFF"
+			subtitle: "Essential For Increasing Backpack Storage"
+			tasks: [{
+				id: "3AF7A5E7020846A8"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			title: "Backpack Upgrades"
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"48FAA6DBC81EED3F"
+				"3434515ECC589ED9"
+				"1D44AAED53869BBB"
+				"0ECB4F57C7E65627"
+			]
+			id: "661157F41CB9C876"
+			shape: "square"
+			size: 1.25d
+			subtitle: "Crucial Data Lies Within"
+			tasks: [{
+				id: "13643586A234CC77"
+				item: "kubejs:mechanic_manual"
+				type: "item"
+			}]
+			title: "A Damaged Manual"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			hide_dependency_lines: false
+			hide_until_deps_complete: true
+			id: "3434515ECC589ED9"
+			subtitle: "Fragments of The Manual"
+			tasks: [{
+				id: "1161E076F39531B3"
+				item: "kubejs:mechanic_manual_scrap_top"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.5d
+		}
+		{
+			disable_toast: true
+			hide_until_deps_complete: true
+			id: "0ECB4F57C7E65627"
+			subtitle: "Fragments of The Manual"
+			tasks: [{
+				id: "1772AB57F0C0D0FA"
+				item: "kubejs:mechanic_manual_scrap_bottom"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			disable_toast: true
+			hide_until_deps_complete: true
+			id: "1D44AAED53869BBB"
+			subtitle: "Fragments of The Manual"
+			tasks: [{
+				id: "16731FD5D699FDD8"
+				item: "kubejs:mechanic_manual_scrap_middle"
+				type: "item"
+			}]
+			x: 8.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48FAA6DBC81EED3F"]
+			description: ["&eAn armored door, definitively sealed. It's not just locked — it's fortified. Whatever's behind this was deemed worth extreme protection... or extreme containment. If the answers are anywhere, they're here. I'll need a serious drill to get through.&r"]
+			icon: "kubejs:steel_armor_penetrated"
+			id: "2C66266D37EC7F2F"
+			size: 1.5d
+			subtitle: "A Chamber, Conspicuously Sealed"
+			tasks: [{
+				icon: "kubejs:steel_armor_block"
+				id: "2DE4E30622B92C04"
+				observe_type: 0
+				timer: 0L
+				to_observe: "kubejs:steel_armor_block"
+				type: "observation"
+			}]
+			title: "Armored Door"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["48FAA6DBC81EED3F"]
+			description: ["&eThey were left in three key locations: The stargate observation room, The preparation room directly in front of the stargate，and The exit&r"]
+			icon: "create:gray_toolbox"
+			id: "7A4768D007A9209B"
+			size: 1.5d
+			subtitle: "There Are Three Toolbox In This Lab"
+			tasks: [{
+				icon: "create:gray_toolbox"
+				id: "34284AC03C517D9F"
+				observe_type: 0
+				timer: 0L
+				to_observe: "create:gray_toolbox"
+				type: "observation"
+			}]
+			title: "Recover the Logs"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A4768D007A9209B"]
+			disable_toast: true
+			id: "456814B0836CE2D6"
+			subtitle: "Another Manual ..."
+			tasks: [{
+				id: "659036A893C2FE8C"
+				item: "kubejs:fluid_manual"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7A4768D007A9209B"]
+			disable_toast: true
+			id: "4B7E501F02D99DEF"
+			subtitle: "It Seems to Contain Important Clues"
+			tasks: [{
+				id: "7DD0E6BBD451D50F"
+				item: "kubejs:brass_lockbox"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A4768D007A9209B"]
+			disable_toast: true
+			id: "0EA786F00A19ADC6"
+			subtitle: "Environmental Recovery Guide"
+			tasks: [{
+				id: "7F91ABDAA7AE930C"
+				item: "kubejs:environmental_note"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7A4768D007A9209B"]
+			disable_toast: true
+			id: "22D1B05586484074"
+			subtitle: "Information About Geology"
+			tasks: [{
+				id: "1A163F3E5CE25F54"
+				item: "kubejs:geological_note"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7A4768D007A9209B"]
+			id: "01145B3810F3CA52"
+			subtitle: "Material Information"
+			tasks: [{
+				id: "664509B98AD6441E"
+				item: "kubejs:material_note"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+	]
+	title: "Desolated Awakening"
+}

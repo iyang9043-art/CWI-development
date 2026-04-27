@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:lake",
+  "config": {
+    "barrier": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "kubejs:decayed_waste_sediment"
+      }
+    },
+    "fluid": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "tfmg:sulfuric_acid",
+        "Properties": {
+          "level": "0"
+        }
+      }
+    }
+  }
+}

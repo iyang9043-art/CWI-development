@@ -1,0 +1,401 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_pulse_of_industry"
+	group: ""
+	icon: "kubejs:fluid_manual"
+	id: "3C0575396F2EA34E"
+	images: [
+		{
+			height: 1.33d
+			image: "create:block/copper_casing"
+			rotation: 0.0d
+			width: 1.33d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 1.33d
+			image: "create:block/brass_block"
+			rotation: 0.0d
+			width: 1.33d
+			x: 2.5d
+			y: -6.5d
+		}
+	]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			id: "497B62C9B689DE39"
+			invisible: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "143F946FF784F70B"
+				item: "kubejs:fluid_manual"
+				type: "item"
+			}]
+			title: "Fluid Mechanics"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["497B62C9B689DE39"]
+			id: "03B2E935BC80D280"
+			shape: "square"
+			tasks: [{
+				id: "45D2D1284232804E"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0AB2714AE3675671"
+				"68EF942EB6D8901B"
+			]
+			id: "5A05AF5F4360CBBC"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				id: "3D72840214ADF626"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["03B2E935BC80D280"]
+			disable_toast: true
+			id: "68EF942EB6D8901B"
+			tasks: [{
+				id: "76D1320E3CCFAEDE"
+				item: "create:copper_sheet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["68EF942EB6D8901B"]
+			disable_toast: true
+			id: "4D08D43112F8E50A"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4D8821EF07F7468C"
+				item: "create:fluid_pipe"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4D08D43112F8E50A"]
+			disable_toast: true
+			id: "5C630C455922A36A"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "694D1C06AC826164"
+				item: "create:mechanical_pump"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4D08D43112F8E50A"]
+			disable_toast: true
+			id: "358B15745F3F6A7B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0D59BFA21B1BD151"
+				item: "create:fluid_valve"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A05AF5F4360CBBC"]
+			disable_toast: true
+			id: "1F205AA95D114BEB"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "413E3E3E6738D431"
+				item: "create:portable_fluid_interface"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5A05AF5F4360CBBC"]
+			disable_toast: true
+			id: "0C856B27FEBCFD64"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6AD761659599D83D"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5A05AF5F4360CBBC"]
+			disable_toast: true
+			id: "7C12FC4C16CA0D9D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7F4EA407AEF8FFF0"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["68EF942EB6D8901B"]
+			disable_toast: true
+			id: "3AD988D19BD12F19"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1724D0FFAEF86BC8"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3AD988D19BD12F19"]
+			disable_toast: true
+			id: "21516827F73BAC5C"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Require Burner for Full Energy Output"
+			tasks: [{
+				id: "6AFB50297017E74F"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["21516827F73BAC5C"]
+			disable_toast: true
+			id: "280E95A4E8CF8E4F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "69F26EFA9D66C18B"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"4D08D43112F8E50A"
+				"0AB2714AE3675671"
+			]
+			disable_toast: true
+			id: "51FCF9E1390C7557"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "111D230DC2D2E991"
+				item: "fluid:copper_tap"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5A05AF5F4360CBBC"]
+			disable_toast: true
+			id: "7EBA164EE1EBC428"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "05EBB15E2A87395B"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["11F9A3AD93930BDD"]
+			disable_toast: true
+			id: "36A0A9049C7E3228"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3B8155B7BDBED2EE"
+				item: "fluid:pipette"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0AB2714AE3675671"]
+			disable_toast: true
+			id: "3D9C425E8993EE1D"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "34082FFFF7D0EEC5"
+				item: "create_factory_logistics:jar_packager"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3D9C425E8993EE1D"]
+			disable_toast: true
+			id: "49BB95B4D4287747"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5A8ADD7BFF85A9D0"
+				item: "create_factory_logistics:factory_fluid_gauge"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["497B62C9B689DE39"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "0AB2714AE3675671"
+			tasks: [{
+				id: "156D7D2A51596198"
+				item: "kubejs:rubber"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["497B62C9B689DE39"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "1B2BF2C10C4FEB9E"
+			shape: "square"
+			tasks: [{
+				id: "6FE8E94AF2C36F99"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["03B2E935BC80D280"]
+			disable_toast: true
+			id: "1BC0E9639F76FFE6"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "72850DADB66A958F"
+					item: "fluid:smart_gutter_outlet"
+					type: "item"
+				}
+				{
+					id: "1EBF1ADE0A2E26E8"
+					item: "fluid:gutter_outlet"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4D08D43112F8E50A"]
+			disable_toast: true
+			id: "3FC61A5F2C151E4F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "204B8E4E8B1E0E6A"
+				item: "fluid:centrifugal_pump"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["03B2E935BC80D280"]
+			disable_toast: true
+			id: "634FC7A47FB767BA"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1B854E99FE14F623"
+					item: "fluid:smart_fluid_interface"
+					type: "item"
+				}
+				{
+					id: "7692411FA868C7F5"
+					item: "fluid:fluid_interface"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["68EF942EB6D8901B"]
+			id: "35DCFF2700B3C97B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7878CC5491265206"
+				item: "create_connected:fluid_vessel"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1B2BF2C10C4FEB9E"]
+			disable_toast: true
+			id: "11F9A3AD93930BDD"
+			tasks: [
+				{
+					id: "4A3492332D7B237F"
+					item: "kubejs:robot_pipette"
+					type: "item"
+				}
+				{
+					id: "1D0610A290E40F42"
+					item: "kubejs:robot_arm"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -6.5d
+		}
+	]
+	title: "The Pulse of Industry"
+}

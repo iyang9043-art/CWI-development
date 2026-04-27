@@ -1,0 +1,49 @@
+
+["Mob Spawn"]
+
+	["Mob Spawn"."Flesh Maiden"]
+		#How many days until Flesh Maiden can spawn, set to -1 to disable, Default: 15
+		#Range: > -1
+		FleshMaidenDaySpawn = 15
+		#Spawn minimum group count for Flesh Maiden, Default: 1
+		#Range: > 1
+		FleshMaidenSpawnMinCount = 1
+		#Spawn maximum group count for Flesh Maiden, must be equal or higher than min count, Default: 2
+		#Range: > 1
+		FleshMaidenSpawnMaxCount = 2
+		#Spawn Weight for Flesh Maiden, Default: 10
+		#Range: > 0
+		FleshMaidenSpawnWeight = 15
+
+	["Mob Spawn"."Ex Reaper"]
+		#Spawn Weight for Ex Reaper, Default: 10
+		#Range: > 0
+		ExReaperSpawnWeight = 15
+		#Spawn minimum group count for Ex Reaper, Default: 1
+		#Range: > 1
+		ExReaperSpawnMinCount = 1
+		#How many days until Ex Reaper can spawn, set to -1 to disable, Default: 15
+		#Range: > -1
+		ExReaperDaySpawn = 15
+		#Spawn maximum group count for Ex Reaper, must be equal or higher than min count, Default: 2
+		#Range: > 1
+		ExReaperSpawnMaxCount = 2
+
+	["Mob Spawn"."Heart of Decay"]
+		#Spawn minimum group count for Heart of Decay, Default: 1
+		#Range: > 1
+		HoDSpawnMinCount = 1
+		#Spawn Weight for Heart of Decay, Default: 15
+		#Range: > 0
+		HoDSpawnWeight = 15
+		#Spawn maximum group count for Heart of Decay, must be equal or higher than min count, Default: 3
+		#Range: > 1
+		HoDSpawnMaxCount = 3
+		#How many days until Heart of Decay can spawn, set to -1 to disable, Default: 0
+		#Range: > -1
+		HoDDaySpawn = 0
+
+[General]
+	#Whether Technoflesh creatures gain buffs as game time goes by, Default: true
+	TechnoFleshBuff = true
+

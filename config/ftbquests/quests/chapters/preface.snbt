@@ -1,0 +1,192 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "preface"
+	group: ""
+	icon: "create_sa:heap_of_experience"
+	id: "3CC93A708D683930"
+	images: [
+		{
+			height: 4.0d
+			image: "sculkcatalyticchamber:textures/particle/mechanical_shrieker_10.png"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 5.0d
+			image: "sculkcatalyticchamber:textures/particle/mechanical_shrieker_13.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"581352108711C576"
+				"52B3434FBA5AC6FF"
+				"48AC81B4ABF02782"
+				"7A44091B6E68D50D"
+				"46475B7FCE7E04E8"
+				"5137F04F4288DA8F"
+				"216B9570B131C6AF"
+				"5A4EECDD6BF9801B"
+			]
+			description: ["&eThings you must know before starting this modpack. You will suffer if you don't see this&r"]
+			disable_toast: true
+			icon: "kubejs:depleted_dirt"
+			id: "616FAC6C3E7160CB"
+			shape: "circle"
+			size: 2.9d
+			subtitle: "You Can Start After Reading All Of Them"
+			tasks: [{
+				id: "004357245CB2299D"
+				type: "checkmark"
+			}]
+			title: "Start The Game"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["&eThe familiar Overworld has been transformed into a hazardous, post-cataclysmic wasteland.&r"]
+			disable_toast: true
+			icon: "kubejs:cassiterite"
+			id: "581352108711C576"
+			shape: "circle"
+			size: 2.0d
+			subtitle: "The world is no longer the way it is used to be"
+			tasks: [{
+				id: "0AAE19A994A68DE8"
+				type: "checkmark"
+			}]
+			title: "A Different World"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: [
+				"&eWhen using the Mandala's GUI, the others are only for the GUI author's download count; please use the customized version of this modpack. &r"
+				""
+				"&eThe Old Copper Texture is a resource pack I made to port the 0.5 texture of create into 6.0. If you disabled it, please use the New Copper Texture, otherwise, the textures may have issues.&r"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "createdieselgenerators:track_layers_bag"
+				tag: { }
+			}
+			id: "216B9570B131C6AF"
+			size: 2.0d
+			subtitle: "MandalasGUI and Copper Textures"
+			tasks: [{
+				id: "16EB191EAC44D5AF"
+				type: "checkmark"
+			}]
+			title: "Resource Packs"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			description: ["&6Some mods are only for enhancing gaming experience, and you can delete them without causing any problems in the modpack.&r\\n\\n&eXaero's Maps - Map that is actually very useful&r\\n\\n&eInventory Sorter - A mod for Sorting items&r\\n\\n&eOculus - Including all mods around shaders&r\\n\\n&eJust Enough Characters - If you don't speak chinese&r\\n\\n&eSodium Dynamic Light&r"]
+			disable_toast: true
+			icon: "minecraft:end_crystal"
+			id: "48AC81B4ABF02782"
+			size: 2.0d
+			subtitle: "Mods That Are Not Necessary"
+			tasks: [{
+				id: "31A3CCA44198D7BD"
+				type: "checkmark"
+			}]
+			title: "Optional Mods"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			description: ["&eThis modpack is perhaps suitable for beginners of Create or Tech modpacks. \\n\\n&eHowever, You should expect a challenging progression where every recipe is intentionally redesigned to create deep interdependencies between mods. It requires strategic planning, complex automation, and thorough exploration at every stage.&r\\n\\n&eThis pack is designed for players seeking a long-term, intellectually engaging engineering challenge with a satisfying payoff.&r&r"]
+			disable_toast: true
+			icon: "tfmg:electricians_wrench"
+			id: "46475B7FCE7E04E8"
+			size: 2.0d
+			subtitle: "Difficulty of This Modpack"
+			tasks: [{
+				id: "7A7F3FAB8877C902"
+				type: "checkmark"
+			}]
+			title: "Expert Pack ?"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"&eQuest Are Hidden Until You Achieved A Certain Stage&r"
+				""
+				"&eYou Have To Complete Quest To Get To The Next Stage&r"
+				""
+				"&eThe Manual Itself Don't Have Any Information. The Information Of The Manual Is Shown In the Quest&r"
+			]
+			disable_toast: true
+			icon: "create:goggles"
+			id: "7A44091B6E68D50D"
+			size: 2.0d
+			subtitle: "Some FAQs About The QUest Of This Modpack"
+			tasks: [{
+				id: "24F7F8196AB61924"
+				type: "checkmark"
+			}]
+			title: "Quests"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			description: ["&eThis is a total conversion pack where every major mod has been deeply integrated into a single, cohesive progression ladder. Mods like Create, TFMG, and Biomancy are not standalone features but interconnected chapters, with custom recipes, and rebalanced loot tables ensuring a unified and challenging expert experience.&r"]
+			disable_toast: true
+			icon: "minecraft:writable_book"
+			id: "52B3434FBA5AC6FF"
+			size: 2.0d
+			subtitle: "Almost Everything Was Changed"
+			tasks: [{
+				id: "1A3A002CBF840039"
+				type: "checkmark"
+			}]
+			title: "Modification"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			description: ["&eIf You Don't Know What to do in the game, I suggest you to look at the quest carefully, especially the description.&r"]
+			disable_toast: true
+			icon: "create:schematic_and_quill"
+			id: "5137F04F4288DA8F"
+			size: 2.0d
+			subtitle: "What Should I Do ?"
+			tasks: [{
+				id: "2AD17BF6EC67EA17"
+				type: "checkmark"
+			}]
+			title: "Confusing Quests"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			description: ["&eIf any BUG was found in this modpack, please report in the discord server or under the modpack's curseforge page&r\\n\\n&eYou could join the modpack's Discord server using the URL https://discord.gg/sbJyC2qxX3 , you can find it in the Curseforge page&r"]
+			disable_toast: true
+			icon: "createdeco:decal_warning"
+			id: "5A4EECDD6BF9801B"
+			size: 2.0d
+			subtitle: "Where To Report BUGs"
+			tasks: [{
+				id: "5AE5E01423EF0098"
+				type: "checkmark"
+			}]
+			title: "BUG ?"
+			x: -4.0d
+			y: 0.0d
+		}
+	]
+	title: "Preface"
+}

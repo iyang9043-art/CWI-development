@@ -1,0 +1,9 @@
+{
+  "variants": {
+    "": [
+      { "model": "kubejs:block/acidified_darkslate_1", "weight": 1 },
+      { "model": "kubejs:block/acidified_darkslate_2", "weight": 1 },
+      { "model": "kubejs:block/acidified_darkslate_3", "weight": 1 }
+    ]
+  }
+}

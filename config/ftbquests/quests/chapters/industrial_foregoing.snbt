@@ -1,0 +1,812 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "industrial_foregoing"
+	group: ""
+	icon: "kubejs:industrial_manual"
+	id: "2649B909E69A70FB"
+	images: [
+		{
+			height: 1.33d
+			image: "tfmg:block/palettes/stone_types/cap/bauxite_cut_cap"
+			rotation: 0.0d
+			width: 1.33d
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			height: 1.33d
+			image: "tfmg:block/steel_casing"
+			rotation: 0.0d
+			width: 1.33d
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			height: 1.33d
+			image: "tfmg:block/cast_iron_block"
+			rotation: 0.0d
+			width: 1.33d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			height: 1.0d
+			image: "kubejs:block/harden_wood"
+			rotation: 45.0d
+			width: 1.0d
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/steel_vat_top"
+			rotation: 45.0d
+			width: 1.0d
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/steel_vat_top"
+			rotation: 45.0d
+			width: 1.0d
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/steel_vat_top"
+			rotation: 45.0d
+			width: 1.0d
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "kubejs:item/molds/fireproof_brick_disk"
+			rotation: 45.0d
+			width: 1.0d
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "createmetallurgy:block/industrial_crucible/crucible_inner"
+			rotation: 45.0d
+			width: 1.0d
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/steel_vat_top"
+			rotation: 45.0d
+			width: 1.0d
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			height: 1.0d
+			image: "tfmg:block/steel_vat_top"
+			rotation: 45.0d
+			width: 1.0d
+			x: 12.0d
+			y: 4.0d
+		}
+	]
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7A0C6B3904C55546"
+			invisible: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3471BB278B14DE85"
+				item: "kubejs:industrial_manual"
+				type: "item"
+			}]
+			title: "Industrial Age"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"461B8FFD37D6D4A8"
+				"34A1646F3FC3509B"
+			]
+			id: "3E0CF50CF54A7795"
+			shape: "square"
+			tasks: [{
+				id: "52F9478B200B748C"
+				item: "tfmg:cast_iron_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5148FEA0B12D0880"
+				"4B93583D74E7E010"
+			]
+			id: "0635A293D5BA7EF2"
+			shape: "square"
+			tasks: [{
+				id: "7942A16831EDA69A"
+				item: "tfmg:steel_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "09E6FDDC7DCCD8E3"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "471C4245F65D97F6"
+				item: "tfmg:coke_oven"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["09E6FDDC7DCCD8E3"]
+			id: "4784F318EADDD9C3"
+			tasks: [{
+				id: "66AC72A9F1107284"
+				item: "tfmg:coal_coke"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3E0CF50CF54A7795"
+				"49EB4FE7D42831FA"
+				"13C9C9F227B312DD"
+				"337E1339823083A2"
+			]
+			id: "5148FEA0B12D0880"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3E1D51DB4BCB3036"
+				item: "tfmg:blast_furnace_output"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DADEE61B50B2B74"]
+			id: "49EB4FE7D42831FA"
+			tasks: [{
+				id: "12E0D24622EA9C27"
+				item: "tfmg:fireproof_bricks"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["14B9150E857D89D3"]
+			id: "4DADEE61B50B2B74"
+			shape: "square"
+			subtitle: "Even MORE Refractory"
+			tasks: [{
+				id: "477046D248E52059"
+				item: "tfmg:fireproof_brick"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3E0CF50CF54A7795"]
+			id: "13C9C9F227B312DD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "22951217AB4DA25F"
+					item: "tfmg:blast_furnace_hatch"
+					type: "item"
+				}
+				{
+					id: "043662A42D209F9F"
+					item: "tfmg:air_intake"
+					type: "item"
+				}
+			]
+			title: "Hot Air"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3E0CF50CF54A7795"]
+			id: "337E1339823083A2"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3AD67A3E7E1B6578"
+				item: "tfmg:blast_stove"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5CB3035210A39A5F"
+				"307C9A0994617AEA"
+				"09A16A54841462D0"
+				"6DFB21A13808280F"
+			]
+			id: "14B9150E857D89D3"
+			tasks: [{
+				id: "33967496483FF39B"
+				item: "tfmg:fireclay_ball"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "307C9A0994617AEA"
+			tasks: [{
+				id: "65314E54C8FBBB97"
+				item: "tfmg:bauxite_powder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "5CB3035210A39A5F"
+			tasks: [{
+				id: "7A80B4CA2B0BF9F0"
+				item: "kubejs:silicon_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "09A16A54841462D0"
+			tasks: [{
+				id: "1399CB6A28A8469E"
+				item: "kubejs:magnesite_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"33288F9895EE3A5E"
+				"5742E5A99ED7CEF1"
+			]
+			id: "7F050F2D70CEA448"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				id: "4D9D2D44DFEBC788"
+				item: "tfmg:steel_casing"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5742E5A99ED7CEF1"]
+			id: "213E8A29FFD8F2F6"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				id: "0A70FC9BF912EC2A"
+				item: "tfmg:heavy_machinery_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0635A293D5BA7EF2"]
+			id: "5742E5A99ED7CEF1"
+			tasks: [{
+				id: "00A8A83AA19B71F6"
+				item: "tfmg:heavy_plate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5742E5A99ED7CEF1"]
+			id: "7D93855EB57F68E5"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "53AF58ACC8D7D86D"
+				item: "tfmg:blast_furnace_reinforcement"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72BBEB2B8E9363AB"]
+			id: "33288F9895EE3A5E"
+			tasks: [{
+				id: "71517F0A0693C35F"
+				item: "kubejs:harden_wood"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "6DFB21A13808280F"
+			tasks: [{
+				id: "7C030214A8273473"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["09E6FDDC7DCCD8E3"]
+			id: "72BBEB2B8E9363AB"
+			tasks: [{
+				id: "27F49C90ECC65A2E"
+				item: "tfmg:creosote_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4784F318EADDD9C3"]
+			id: "461B8FFD37D6D4A8"
+			tasks: [{
+				id: "34124BBFCA8DAEA6"
+				item: "tfmg:coal_coke_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7A0C6B3904C55546"]
+			hide_dependency_lines: true
+			id: "34A1646F3FC3509B"
+			tasks: [{
+				id: "43235D5BFDAF9C4F"
+				item: "tfmg:limesand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["72BBEB2B8E9363AB"]
+			id: "70556A32DA19E441"
+			shape: "diamond"
+			tasks: [{
+				id: "5AD2D3D030ACF624"
+				item: "tfmg:hardened_planks"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4DADEE61B50B2B74"]
+			id: "5C5628BB82D53C81"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "429620DCD4A9043A"
+				item: "createmetallurgy:casting_basin"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DADEE61B50B2B74"]
+			id: "1AC4C7E11C7A406E"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Another Burner"
+			tasks: [{
+				id: "2C5E85DE64CB14A6"
+				item: "tfmg:firebox"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5531421570274E82"]
+			id: "08C023B7583B9161"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "15FEAB67600B7431"
+				item: "tfmg:steel_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5742E5A99ED7CEF1"]
+			id: "5531421570274E82"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "666A88C414E59C27"
+				item: "kubejs:steel_bearing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5C5628BB82D53C81"]
+			id: "4879996922D6BF38"
+			shape: "diamond"
+			tasks: [{
+				id: "56DA74974453C52D"
+				item: "tfmg:slag_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["202D27DC120594C9"]
+			id: "1FC1928E91DA9191"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "563D14AA4A2FFE47"
+				item: "tfmg:industrial_mixer"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5531421570274E82"]
+			id: "25A473E67B1697E0"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0F53995BB1004383"
+				item: "tfmg:concrete_hose"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["08C023B7583B9161"]
+			id: "38C3399F3559D720"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6D513D39818E4606"
+				item: "tfmg:steel_chemical_vat"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["25A473E67B1697E0"]
+			id: "168029E07C5CA042"
+			shape: "diamond"
+			tasks: [{
+				id: "4B3516DC2346C052"
+				item: "tfmg:concrete"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["128293ACBBFC6D76"]
+			id: "5FEBE3E71CBDBB0F"
+			tasks: [{
+				id: "162AE1D02886E438"
+				item: "kubejs:industrial_pump"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5742E5A99ED7CEF1"]
+			id: "128293ACBBFC6D76"
+			tasks: [{
+				id: "396C3695091DF81B"
+				item: "kubejs:steel_ring"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2D1180C9EC2DE6E2"]
+			hide_dependency_lines: true
+			id: "4A57AE1DCC0BFE11"
+			shape: "gear"
+			size: 2.75d
+			tasks: [{
+				id: "64B432CF940A6991"
+				item: "kubejs:steel_armor_safe"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["202D27DC120594C9"]
+			id: "2D1180C9EC2DE6E2"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "760C61E0052D0AB2"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4DADEE61B50B2B74"]
+			icon_scale: 0.8d
+			id: "4B93583D74E7E010"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Better Mold For Higher Temperature"
+			tasks: [{
+				id: "46F05324BAB064C5"
+				item: "kubejs:fireproof_brick_disk"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7D93855EB57F68E5"]
+			id: "69BA8B4A6B6C0D75"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "55E74BA4F5D08C85"
+				item: "createmetallurgy:industrial_crucible"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["25A473E67B1697E0"]
+			id: "2E0453F54E312FDB"
+			shape: "diamond"
+			tasks: [{
+				id: "758ABC986A5C74BB"
+				item: "createdieselgenerators:asphalt_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["38C3399F3559D720"]
+			hide_dependency_lines: true
+			id: "4BB8F26DFBE7AFCD"
+			shape: "diamond"
+			tasks: [{
+				id: "12C7928F48194FDD"
+				item: {
+					Count: 1
+					id: "tfmg:quad_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"213E8A29FFD8F2F6"
+				"08C023B7583B9161"
+				"5FEBE3E71CBDBB0F"
+			]
+			id: "202D27DC120594C9"
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [{
+				id: "42F366E855E89AC0"
+				item: "kubejs:heavy_machine"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1FC1928E91DA9191"]
+			id: "6CDF4C4F3924B144"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Need Aluminum"
+			tasks: [{
+				id: "45D21A385A6EB927"
+				item: "tfmg:mixer_blade"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["69BA8B4A6B6C0D75"]
+			icon: "kubejs:molten_iron_bucket"
+			id: "3F2D54A951F212E4"
+			shape: "diamond"
+			subtitle: "Molten Steel and Iron"
+			tasks: [{
+				id: "1BF4DF48F3CE0452"
+				type: "checkmark"
+			}]
+			title: "Molten Metals"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2D1180C9EC2DE6E2"]
+			icon: "tfmg:heavy_plate"
+			id: "0DC9E40A95F02CAA"
+			shape: "diamond"
+			subtitle: "Press Sheets Directly From Block"
+			tasks: [{
+				id: "1BFE61B7330735B5"
+				title: "Faster Sheets"
+				type: "checkmark"
+			}]
+			x: 16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["202D27DC120594C9"]
+			hide_dependency_lines: true
+			id: "68B7323CA1B8BCCF"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "4E1510BF396FB99C"
+				item: "tfmg:surface_scanner"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["202D27DC120594C9"]
+			hide_dependency_lines: true
+			id: "2AA9C7BE2A0D3BA2"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "277872E762FFAB5A"
+				item: "tfmg:machine_input"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["08C023B7583B9161"]
+			id: "32035A4118FD39B0"
+			shape: "diamond"
+			tasks: [{
+				id: "3D6F58049D081602"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_3"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["70556A32DA19E441"]
+			id: "34F011FB69FB0B93"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "3629CC66B8D77B52"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["202D27DC120594C9"]
+			hide_dependency_lines: true
+			id: "45287FE5D913F14D"
+			tasks: [{
+				id: "566ADBFFB2D9736B"
+				item: "kubejs:engine_cylinder"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"45287FE5D913F14D"
+				"5FEBE3E71CBDBB0F"
+				"0B372411B5263246"
+			]
+			id: "6278A4EBD6EF8DE7"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "73EC8E446A8C2E6B"
+				item: "createdieselgenerators:diesel_engine"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6278A4EBD6EF8DE7"]
+			id: "53E0446A29083D90"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				id: "3180B9A010A98905"
+				item: "createdieselgenerators:large_diesel_engine"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["128293ACBBFC6D76"]
+			hide_dependent_lines: true
+			id: "0B372411B5263246"
+			tasks: [{
+				id: "644CE25A4BBD35FE"
+				item: "kubejs:steel_drill_head"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+	]
+	title: "Industrial Foregoing"
+}

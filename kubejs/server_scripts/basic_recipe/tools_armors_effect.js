@@ -1,0 +1,14 @@
+EntityEvents.hurt(event => {
+    const { entity, source } = event;
+    const player = source.getPlayer();
+    if (!player) return;
+    const item = player.mainHandItem;
+    if (item.id !== 'clanginghowl:industrial_adjustable_wrench') return;
+    entity.potionEffects.add('createaddition:shocking', 20, 0, true, true);
+    event.server.runCommandSilent(
+        `playsound clanginghowl:electric_shock player @a ${entity.x} ${entity.y} ${entity.z} 0.5 2`
+    );
+    event.server.runCommandSilent(
+        `particle minecraft:electric_spark ${entity.x} ${entity.y+1} ${entity.z} 0.8 0.8 0.8 0 20 force`
+    );
+});

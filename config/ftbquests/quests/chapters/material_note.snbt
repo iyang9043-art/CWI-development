@@ -1,0 +1,293 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "material_note"
+	group: ""
+	icon: "kubejs:material_note"
+	id: "2B780E114CBB7C3C"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["01145B3810F3CA52"]
+			hide_dependent_lines: true
+			hide_until_deps_complete: true
+			id: "7D0C6F93C6FE1761"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Not Finished Yet"
+			tasks: [{
+				id: "648902203FB63097"
+				item: "kubejs:material_note"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "50BE729E62F6FAA2"
+			tasks: [{
+				id: "40D6C4AC5392F748"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "5426E7D7F40C6487"
+			tasks: [{
+				id: "0CBD6001A157F457"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "3532B5F30CC8F6D6"
+			tasks: [{
+				id: "6203F4E405510B7F"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "7562302EB17BA45D"
+			tasks: [{
+				id: "77DEAC12CCE8755F"
+				item: "kubejs:rusted_iron_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "09AA38A7FEBAB559"
+			tasks: [{
+				id: "13076B488CAF035C"
+				item: "kubejs:magnesium_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "0ADBED42AB255741"
+			tasks: [{
+				id: "2878656B0F4A3DC5"
+				item: "kubejs:silver_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "72ADBE52D4063EC7"
+			tasks: [{
+				id: "23BD0601855C3FC9"
+				item: "kubejs:bronze_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "7D240FC1B3726CB7"
+			tasks: [{
+				id: "7EB097DAB8877842"
+				item: "createaddition:electrum_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "6237BB01B2A8E60E"
+			tasks: [{
+				id: "3282971E2294AA4C"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "5A771DA7EF21B5F0"
+			tasks: [{
+				id: "74FEC19BCEC01F4B"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "07ACB2FA5B6EDF33"
+			tasks: [{
+				id: "512698CC571DD6C5"
+				item: "tfmg:steel_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "3FA76D1E7FAA0B28"
+			tasks: [{
+				id: "18CB75BD48B444A0"
+				item: "createdeco:industrial_iron_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "1F5EED41C0CCF3B8"
+			tasks: [{
+				id: "6FDA683EF3A55376"
+				item: "tfmg:cast_iron_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "5993E08C4DDDF021"
+			tasks: [{
+				id: "442E7ED17B9193A9"
+				item: "tfmg:lead_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "27A9A84592979C3D"
+			tasks: [{
+				id: "3B74AD93FC145389"
+				item: "kubejs:polyvinyl_chloride_plastic_sheet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "6BF322152F6631D9"
+			tasks: [{
+				id: "220D2AE2C8DFD25C"
+				item: "tfmg:plastic_sheet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "58324EBEC63B3718"
+			tasks: [{
+				id: "4E3DB34008BC8430"
+				item: "kubejs:polybenzimidazole"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "6DDF31AF3BC4DB93"
+			tasks: [{
+				id: "2ED734E0DB353698"
+				item: "tfmg:silicon_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "1BD92F0CA52086EF"
+			tasks: [{
+				id: "4CF2DDEA3B31E421"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "4FAFF56A3C8E29C9"
+			tasks: [{
+				id: "7BAF9F6BE89FFA95"
+				item: "kubejs:nylon_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "2A73D5356317624A"
+			tasks: [{
+				id: "4019B63D3A2BB670"
+				item: "tfmg:nickel_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7D0C6F93C6FE1761"]
+			hide_dependency_lines: true
+			id: "14F8CD061D1CD7E2"
+			tasks: [{
+				id: "192774C1CFFB39AE"
+				item: "kubejs:cobalt_ingot"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+	]
+	title: "Material Note"
+}

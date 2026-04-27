@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 140,
+    "xz_spread": 10,
+    "y_spread": 12,
+    "feature": {
+      "feature": {
+        "type": "minecraft:netherrack_replace_blobs",
+        "config": {
+          "target": {
+            "Name": "minecraft:stone"
+          },
+          "state": {
+            "Name": "minecraft:stone"
+          },
+          "radius": 8
+        }
+      },
+      "placement": []
+    }
+  }
+}

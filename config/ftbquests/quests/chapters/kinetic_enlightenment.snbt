@@ -1,0 +1,918 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "kinetic_enlightenment"
+	group: ""
+	icon: "kubejs:mechanic_manual"
+	id: "014680557FF5EB3A"
+	images: [
+		{
+			height: 1.33d
+			image: "create:block/andesite_block"
+			rotation: 0.0d
+			width: 1.33d
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			height: 1.33d
+			image: "createdeco:block/palettes/catwalks/iron_catwalk"
+			rotation: 0.0d
+			width: 1.33d
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			height: 0.9d
+			image: "createdeco:block/palettes/catwalks/iron_catwalk"
+			rotation: 45.0d
+			width: 0.9d
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			height: 0.9d
+			image: "createdeco:block/palettes/catwalks/iron_catwalk"
+			rotation: 45.0d
+			width: 0.9d
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "create:block/andesite_block"
+			rotation: 45.0d
+			width: 1.0d
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			height: 1.0d
+			image: "create:block/andesite_block"
+			rotation: 45.0d
+			width: 1.0d
+			x: -1.5d
+			y: 3.5d
+		}
+	]
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["661157F41CB9C876"]
+			disable_toast: true
+			hide_dependent_lines: true
+			id: "5E402C739E34B7D4"
+			invisible: true
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5C61EFB7E7018D69"
+				item: "kubejs:mechanic_manual"
+				type: "item"
+			}]
+			title: "Mechanical Age"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"5E402C739E34B7D4"
+				"42229A4123AA3541"
+				"5E24F2344B85B318"
+			]
+			id: "60E2563C494FB253"
+			shape: "square"
+			subtitle: "The Alloy of Mechanics"
+			tasks: [{
+				id: "68F20F61C0740F10"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"540EF2A79DD1C92C"
+				"4C1F87459ED9C5F9"
+				"437113F4C591BBA5"
+				"476F895A01D30141"
+			]
+			disable_toast: true
+			id: "42229A4123AA3541"
+			tasks: [{
+				id: "76B728FDDEB6104A"
+				item: "kubejs:andesite_compound"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"1266E8AE2713DF7E"
+				"701D21C32E77F5C7"
+			]
+			id: "6A11BA5D1C4D2924"
+			shape: "rsquare"
+			size: 1.75d
+			tasks: [{
+				id: "1A72D3EA0EC250E4"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["417DC65C679BBF74"]
+			disable_toast: true
+			id: "1266E8AE2713DF7E"
+			tasks: [{
+				id: "3E4F84056AA52EA3"
+				item: "createdieselgenerators:chip_wood_block"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["012664D784F5D09D"]
+			disable_toast: true
+			id: "4C5689F8A2DBC8A7"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "50FE3543D0720357"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			disable_toast: true
+			id: "437113F4C591BBA5"
+			subtitle: "Adhesive Substance"
+			tasks: [{
+				id: "20046B0DD94228D9"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			disable_toast: true
+			id: "4C1F87459ED9C5F9"
+			subtitle: "The foundation of Mechanics"
+			tasks: [{
+				id: "6D24943C8717C4F0"
+				item: "kubejs:cobbled_andesite"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			description: ["&6&lCan Be Obtained From &r&r\n&eScraps&r\n&eAshstones&r\n&eAshen Depleted Dirt&r"]
+			disable_toast: true
+			id: "540EF2A79DD1C92C"
+			tasks: [{
+				id: "0D2B951A706539CC"
+				item: "kubejs:ash_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["40FA81C21DEF7A09"]
+			disable_toast: true
+			id: "7BDE7169C3C400BD"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "02CEFFA9C48CC91C"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"7BDE7169C3C400BD"
+				"60E2563C494FB253"
+			]
+			disable_toast: true
+			id: "701D21C32E77F5C7"
+			tasks: [{
+				id: "6CD38E7B46524DEF"
+				item: "vintageimprovements:andesite_sheet"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6A11BA5D1C4D2924"
+				"6C479154F903BB77"
+			]
+			disable_toast: true
+			id: "3939A1FCB9D2E69D"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "A Faster Furnace"
+			tasks: [{
+				id: "3CC7AF13E2AF3599"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["49BC1E5BC8236CBD"]
+			disable_toast: true
+			id: "7FD48427B60C3E5A"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "06037BCB30C3223F"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7FD48427B60C3E5A"]
+			id: "40FA81C21DEF7A09"
+			shape: "square"
+			tasks: [{
+				id: "22EB66E1D1DAF556"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6C479154F903BB77"
+				"012664D784F5D09D"
+			]
+			disable_toast: true
+			id: "3CAC1D168C730208"
+			ignore_reward_blocking: true
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "647924C4B0EE7333"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C479154F903BB77"]
+			disable_toast: true
+			id: "2103F1534EFA77A5"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Almost Useless"
+			tasks: [{
+				id: "375BFCF0B2EB7ED8"
+				item: {
+					Count: 1
+					id: "createdieselgenerators:wire_cutters"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6C479154F903BB77"]
+			id: "235292F382A4C466"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "26407595F93BE9C8"
+					item: {
+						Count: 1
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "774E473C609C4ACA"
+					item: {
+						Count: 1
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B54C1A2C1D9EE20"
+					item: {
+						Count: 1
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "38127DD0BBBCA911"
+					item: {
+						Count: 1
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"40FA81C21DEF7A09"
+				"7BDE7169C3C400BD"
+			]
+			disable_toast: true
+			id: "6C479154F903BB77"
+			tasks: [{
+				id: "522EF4A599008659"
+				item: "create:iron_sheet"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60E2563C494FB253"]
+			disable_toast: true
+			id: "49BC1E5BC8236CBD"
+			tasks: [{
+				id: "382FBDA66BE1C09F"
+				item: "create:andesite_alloy_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7FD48427B60C3E5A"]
+			id: "3948D2CA890C6CD0"
+			shape: "diamond"
+			subtitle: "Easier Andesite Alloy"
+			tasks: [{
+				id: "751D7BEFC0D581B0"
+				item: "kubejs:andesite_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6A11BA5D1C4D2924"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "create:chain_conveyor"
+			id: "677428374BDB25A9"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "This Will Help You Manage Your Factory"
+			tasks: [{
+				id: "11E128502C318F11"
+				item: "create:chain_conveyor"
+				type: "item"
+			}]
+			title: "A Chained System"
+			x: 12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6C479154F903BB77"]
+			id: "621E7183CC10DDAC"
+			ignore_reward_blocking: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "4FB850DFD1AF2EC0"
+					item: {
+						Count: 1
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03301C65DCFA42B9"
+					item: {
+						Count: 1
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13A968EB61F1A0D3"
+					item: {
+						Count: 1
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2D1E243037067DF6"
+					item: {
+						Count: 1
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1E519F1F781CAA7D"
+					item: {
+						Count: 1
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["264672AB0C531345"]
+			disable_toast: true
+			icon: "create:package_frogport"
+			id: "195710E5E6F5F3D5"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "31BF94B55F809237"
+				item: "create:package_frogport"
+				type: "item"
+			}]
+			title: "Frog Logistic"
+			x: 12.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["49BC1E5BC8236CBD"]
+			disable_toast: true
+			hide_dependency_lines: false
+			id: "285908C913E29547"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1A029323230A494A"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1266E8AE2713DF7E"]
+			icon: "create:water_wheel"
+			id: "775DF78EB236C941"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "The First Stress Generator"
+			tasks: [{
+				id: "4C1460C8A495844D"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1266E8AE2713DF7E"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "1E00920BBA587F26"
+			subtitle: "Unable to Generate Stress Unit Without Sails"
+			tasks: [{
+				id: "26C5B3EE09DA0ECA"
+				item: "create:sail_frame"
+				type: "item"
+			}]
+			x: 12.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["1E00920BBA587F26"]
+			icon: "create:windmill_bearing"
+			id: "7CAFFE1A4C01CF47"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Wind Energy - A Better Generator"
+			tasks: [
+				{
+					id: "60F5FF713322C264"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+				{
+					id: "54A039AE92235383"
+					item: "create:white_sail"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["775DF78EB236C941"]
+			id: "242D3A2688376BA0"
+			ignore_reward_blocking: true
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "Larger Water Wheel"
+			tasks: [{
+				id: "587B6201E0BF2DDF"
+				item: "create:large_water_wheel"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["27EBAF24944A2A20"]
+			disable_toast: true
+			id: "264672AB0C531345"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "218DC4F36A442CD8"
+				item: "create:packager"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["60E2563C494FB253"]
+			disable_toast: true
+			id: "542B9C01C426BA3F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "74ADAF94D6180577"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			disable_toast: true
+			id: "5E24F2344B85B318"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Chiseled From Claystone Base"
+			tasks: [{
+				id: "54ABA5747F20DD14"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4C5689F8A2DBC8A7"]
+			disable_toast: true
+			hide_dependency_lines: false
+			icon_scale: 0.9d
+			id: "055007D72160EFC4"
+			shape: "gear"
+			size: 2.75d
+			subtitle: "Open The Lockbox With Mechanical Press"
+			tasks: [{
+				id: "43D4EC87EAF72FBA"
+				item: "kubejs:brass_lockbox"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["285908C913E29547"]
+			id: "2CC58D6978615651"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "797CC00ADB8E5C5A"
+					item: "miners_delight:arthropod"
+					type: "item"
+				}
+				{
+					id: "18D07A223EDFBE2B"
+					item: "miners_delight:silverfish_eggs"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6A11BA5D1C4D2924"
+				"173296B31B228A12"
+			]
+			description: [
+				"&eThe Mechanical Core you have just assembled is the silent heart of all progress.&r"
+				""
+				"&eEvery gear, every axle, every whirring machine that will one day reshape this barren world depends on this single component.&r"
+				""
+				"&eIt is the first true step toward reclaiming what we lost—even from scattered remnants, order can arise.&r"
+			]
+			id: "012664D784F5D09D"
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "The Core of Mechanics"
+			tasks: [{
+				id: "44075566716B7121"
+				item: "kubejs:andesite_machine"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["012664D784F5D09D"]
+			id: "6B423AB39398252B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7B5FED24F26D21E3"
+				item: "create:schematicannon"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			disable_toast: true
+			id: "417DC65C679BBF74"
+			subtitle: "Only Supply for Wood"
+			tasks: [{
+				id: "773304BD68CD27D6"
+				item: "createdieselgenerators:wood_chip"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6C479154F903BB77"]
+			description: [
+				"&eRightclick with fuel to burn&r"
+				""
+				"&eUses same fuel as furnace&r"
+			]
+			disable_toast: true
+			id: "1D5086DE41A5D46B"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "1C598B08D327D546"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["701D21C32E77F5C7"]
+			disable_toast: true
+			hide_dependency_lines: true
+			id: "173296B31B228A12"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "53A30DEC0DB60852"
+				item: "kubejs:andesite_bearing"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1D5086DE41A5D46B"]
+			disable_toast: true
+			id: "2AD57CB06F484582"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "56406577988924B1"
+					item: "createmetallurgy:foundry_basin"
+					type: "item"
+				}
+				{
+					id: "3D97C14BEB5E2978"
+					item: "createmetallurgy:foundry_lid"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["2AD57CB06F484582"]
+			disable_toast: true
+			id: "73B79BFBE4B0DC6F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "519DC640B9E27AAD"
+				item: "createmetallurgy:casting_table"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["012664D784F5D09D"]
+			disable_toast: true
+			id: "1750081E47007EBC"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Print The Shapes of Items"
+			tasks: [{
+				id: "4147AF585ABB2355"
+				item: "vintageimprovements:curving_press"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1750081E47007EBC"]
+			disable_toast: true
+			id: "2DBB4544AB0C3F18"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "23DAC21A39B12C7B"
+					item: "kubejs:clay_ingot_mold"
+					type: "item"
+				}
+				{
+					id: "11091A4CE72900E0"
+					item: "kubejs:clay_nugget_mold"
+					type: "item"
+				}
+				{
+					id: "456EA43F1FA49967"
+					item: "kubejs:clay_sheet_mold"
+					type: "item"
+				}
+				{
+					id: "6BFAAFA35BDE5B6A"
+					item: "kubejs:clay_rod_mold"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2DBB4544AB0C3F18"]
+			disable_toast: true
+			id: "078E22FD664525E0"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Simple Molds - Can't Handle Extremely Hot Items"
+			tasks: [
+				{
+					id: "7258354FC9BB2EC0"
+					item: "kubejs:terracotta_ingot_mold"
+					type: "item"
+				}
+				{
+					id: "191897AF7EAE7A48"
+					item: "kubejs:terracotta_nugget_mold"
+					type: "item"
+				}
+				{
+					id: "13215DDFE52AACB5"
+					item: "kubejs:terracotta_sheet_mold"
+					type: "item"
+				}
+				{
+					id: "0481C6CE5173D122"
+					item: "kubejs:terracotta_rod_mold"
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["3CAC1D168C730208"]
+			disable_toast: true
+			id: "27EBAF24944A2A20"
+			tasks: [{
+				id: "52BF99F138DABA15"
+				item: "create:cardboard"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5E402C739E34B7D4"]
+			disable_toast: true
+			id: "476F895A01D30141"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Chiseled From Claystone Base"
+			tasks: [{
+				id: "58396F5CCA70668D"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["012664D784F5D09D"]
+			hide_dependency_lines: true
+			id: "07B2757EC96E4E09"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "Rubber Automation"
+			tasks: [{
+				id: "63303524C48E34F3"
+				item: "rubberworks:sapper"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["012664D784F5D09D"]
+			hide_dependency_lines: true
+			id: "623F4EF31A00940F"
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "15D6CACA95DF43DA"
+				item: "create_power_loader:andesite_chunk_loader"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 3.5d
+		}
+	]
+	title: "Kinetic Enlightenment"
+}

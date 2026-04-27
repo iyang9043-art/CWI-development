@@ -1,0 +1,25 @@
+
+#.
+#Parameters and abilities of Create Fluid's kinetic mechanisms
+[kinetics]
+	#.
+	#.
+	#[in Blocks]
+	#Maximum transport distance in blocks for the Centrifugal Pump.
+	#Range: > 1
+	centrifugalPumpRange = 32
+
+	[kinetics.stressValues]
+
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v1]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v1.impact]
+				centrifugal_pump = 8.0
+				pipette = 16.0
+

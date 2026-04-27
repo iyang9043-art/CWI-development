@@ -1,0 +1,9 @@
+{
+  "item.create_sa.brass_exoskeleton_chestplate": "Bronze Exoskeleton",
+  "item.create_sa.brass_jetpack_chestplate": "Bronze Jetpack",
+  "item.create_sa.zinc_handle": "Quality tool handle",
+  "item_desc.copper_magnet.desc": "Made of copper, amplifies the magnetic field of netherite at both ends.",
+  "item.create_sa.netherite_jetpack_chestplate": "Netherite Jetpack",
+  "item.create_sa.brass_drone_item": "Brass drone",
+  "entity.create_sa.brass_drone": "Brass drone"
+}

@@ -1,0 +1,14 @@
+{
+  "item.sophisticatedbackpacks.backpack": "Backpack",
+  "block.sophisticatedbackpacks.backpack": "Backpack",
+  "item.sophisticatedbackpacks.copper_backpack": "Reinforced Backpack",
+  "item.sophisticatedbackpacks.iron_backpack": "Advanced Backpack",
+  "item.sophisticatedbackpacks.gold_backpack": "Gold Backpack",
+  "item.sophisticatedbackpacks.diamond_backpack": "Diamond Backpack",
+  "item.sophisticatedbackpacks.netherite_backpack": "Netherite Backpack",
+  "block.sophisticatedbackpacks.copper_backpack": "reinforced Backpack",
+  "block.sophisticatedbackpacks.iron_backpack": "Advanced Backpack",
+  "block.sophisticatedbackpacks.gold_backpack": "Gold Backpack",
+  "block.sophisticatedbackpacks.diamond_backpack": "Diamond Backpack",
+  "block.sophisticatedbackpacks.netherite_backpack": "Netherite Backpack"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "kubejs:block/crafting_table_side",
+    "side": "kubejs:block/crafting_table_side",
+    "top": "kubejs:block/incomplete_crafting_table_top",
+    "bottom": "kubejs:block/claystone_base_bottom"
+  }
+}

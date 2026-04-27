@@ -1,0 +1,828 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "geology"
+	group: ""
+	icon: "kubejs:geological_note"
+	id: "56B7C8C19B0855BD"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["77638D6698CCC725"]
+			hide_dependency_lines: true
+			icon: "minecraft:stone"
+			id: "73F7C99EE4ABCE4F"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:stone"
+				id: "57F07B086A5BA2FE"
+				type: "dimension"
+			}]
+			title: "Overworld Ores"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "2F94FFCC16D5C49D"
+			tasks: [{
+				id: "5161456C10D9FF38"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "0506C2A234B9703F"
+			tasks: [{
+				id: "1A0D0F9C7776F8F5"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			x: 1.4d
+			y: -8.3d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "10B2B5FA8BC2D32D"
+			tasks: [{
+				id: "31A42EA54EC6558D"
+				item: "minecraft:raw_copper"
+				type: "item"
+			}]
+			x: 3.3d
+			y: -3.6d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "0950824625FE540D"
+			tasks: [{
+				id: "4B43540B357A8EFE"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			x: 1.4d
+			y: -1.7d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "6D052D453279A7A2"
+			tasks: [{
+				id: "6F529AFEAFB092D0"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			x: -1.4d
+			y: -8.3d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "7D513F2990AAD38B"
+			tasks: [{
+				id: "2683A832779B14E8"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -3.3d
+			y: -6.4d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "290B3071C2AC1F08"
+			tasks: [{
+				id: "685E986232FD0658"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "00BD2A9056BBD12D"
+			tasks: [{
+				id: "10939380EA3E8139"
+				item: "tfmg:raw_nickel"
+				type: "item"
+			}]
+			x: 3.3d
+			y: -6.4d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "1F80AA8218471AE0"
+			tasks: [{
+				id: "311DF0A1A4E63D61"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "7BE37EB99A6D4CF7"
+			tasks: [{
+				id: "334C0B73D5B087BD"
+				item: "tfmg:sulfur_dust"
+				type: "item"
+			}]
+			x: -3.3d
+			y: -3.6d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "3500006A693DD345"
+			tasks: [{
+				id: "3BD0713511B91B51"
+				item: "kubejs:raw_tin"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "719F83D1EB14EF52"
+			tasks: [{
+				id: "4960F5FBC32AC80F"
+				item: "create:raw_zinc"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "01551CCFD7B02814"
+			tasks: [{
+				id: "03D62FF42AB2FEEF"
+				item: "tfmg:raw_lead"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "32B8611C97510295"
+			tasks: [{
+				id: "74756C52720C6F0D"
+				item: "tfmg:raw_lithium"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "798B24CD005209E9"
+			tasks: [{
+				id: "200888FB3B585774"
+				item: "kubejs:raw_silver"
+				type: "item"
+			}]
+			x: -1.4d
+			y: -1.7d
+		}
+		{
+			dependencies: ["77638D6698CCC725"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:netherrack"
+			id: "009C96B36DFFDD5B"
+			invisible: true
+			size: 1.0d
+			subtitle: "Not Finished"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "1B257D7F4B39CEB1"
+				type: "dimension"
+			}]
+			title: "Nether Ores"
+			x: 21.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "6FAF3C840644F9D0"
+			tasks: [{
+				id: "566322A37985C8CB"
+				item: "minecraft:raw_gold"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "364041AAD78EB3A1"
+			tasks: [{
+				id: "69E8118A6CA7B38F"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 23.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "743931EEF79771D1"
+			tasks: [{
+				id: "1BAAFD77F9D5EDD0"
+				item: "sgjourney:raw_naquadah"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "424B057217E415F9"
+			tasks: [{
+				id: "265BB5411D3E288D"
+				item: "tfmg:sulfur_dust"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77638D6698CCC725"]
+			hide_dependency_lines: true
+			icon: "minecraft:stone"
+			id: "450EC9FCCFB49FA9"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:stone"
+				id: "21F032D1B3307590"
+				type: "dimension"
+			}]
+			title: "Overworld Ore Veins"
+			x: 3.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "5F134945AFC3583E"
+			tasks: [{
+				id: "63C13B1B01E5C984"
+				item: "kubejs:azurite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "348F7BF851E4C95E"
+			tasks: [{
+				id: "2DCBC6BED2B52D8B"
+				item: "kubejs:chromite"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "51C86C8C68E48EA9"
+			tasks: [{
+				id: "3440339E4523FD30"
+				item: "kubejs:bauxite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "73FF6276224EBAB6"
+			tasks: [{
+				id: "009830F1DF08E26C"
+				item: "kubejs:galena"
+				type: "item"
+			}]
+			x: 4.9d
+			y: 8.8d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "4D4BB95CAA968736"
+			tasks: [{
+				id: "128F345ADA9E3AC7"
+				item: "kubejs:magnetite"
+				type: "item"
+			}]
+			x: 2.1d
+			y: 8.8d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "14774B797AB28D64"
+			tasks: [{
+				id: "78ABBFD3E9D7DE72"
+				item: "kubejs:cassiterite"
+				type: "item"
+			}]
+			x: 6.8d
+			y: 6.9d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "207759E6F9A95646"
+			tasks: [{
+				id: "5569500FF32BB2BB"
+				item: "kubejs:sphalerite"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "60C945A7A8D4054A"
+			tasks: [{
+				id: "498220F65D5BE201"
+				item: "kubejs:chalcocite"
+				type: "item"
+			}]
+			x: 0.2d
+			y: 6.9d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "2285D4636ABBCF53"
+			tasks: [{
+				id: "2E008892DC6B6EAF"
+				item: "kubejs:hematite"
+				type: "item"
+			}]
+			x: 6.8d
+			y: 4.1d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "4BBBB627F7AB501F"
+			tasks: [{
+				id: "7B0F509F8C00BD43"
+				item: "kubejs:lignite"
+				type: "item"
+			}]
+			x: 0.2d
+			y: 4.1d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "07953215B5F0ABE7"
+			tasks: [{
+				id: "512A6D8BB54C56CF"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "3C495220D7F4ABD1"
+			tasks: [{
+				id: "3AA091AF027F2613"
+				item: "kubejs:petzite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "1F9C0D9632351F1F"
+			tasks: [{
+				id: "03F45974D02BD3FE"
+				item: "kubejs:halite"
+				type: "item"
+			}]
+			x: 2.1d
+			y: 2.2d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "00C88F4A64520F95"
+			tasks: [{
+				id: "4916A21522C0ADE3"
+				item: "kubejs:pentlandite"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["77638D6698CCC725"]
+			disable_toast: true
+			hide_dependency_lines: true
+			icon: "minecraft:netherrack"
+			id: "3A1C6C2C5F5965E7"
+			invisible: true
+			size: 1.0d
+			subtitle: "Not Finished"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "32E8120A88A1A885"
+				type: "dimension"
+			}]
+			title: "Nether Ore Veins"
+			x: 19.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "22E99910557AA046"
+			tasks: [{
+				id: "15205896899F318D"
+				item: "kubejs:cooperite"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "1A6BEA4E485D5F19"
+			tasks: [{
+				id: "1794F2B9DFCFDE2E"
+				item: "kubejs:rutile"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "46D938DC84518EF3"
+			tasks: [{
+				id: "33537F6C4AEF7C07"
+				item: "tfmg:sulfur_dust"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "44808873B24D25DD"
+			tasks: [{
+				id: "1C962C982C780E9F"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 20.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "69868F26E8CAEB28"
+			tasks: [{
+				id: "1A1C789CAC4B7371"
+				item: "kubejs:petzite"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "11CBF5CC3C77AFB9"
+			tasks: [{
+				id: "2B383E502AECAA19"
+				item: "kubejs:chromite"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "20AE4883883AF881"
+			tasks: [{
+				id: "4B0890512C62C155"
+				item: "kubejs:cassiterite"
+				type: "item"
+			}]
+			x: 19.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "76D20CBA56A8B826"
+			tasks: [{
+				id: "40201443DD9F482D"
+				item: "kubejs:sphalerite"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "18CC2E58DB8CDEB3"
+			tasks: [{
+				id: "0A9022A2CF5CDC60"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "3E9879ACA95F92AD"
+			tasks: [{
+				id: "615B47936C4A8976"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: 22.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["77638D6698CCC725"]
+			hide_dependency_lines: true
+			id: "3D033B6C68308599"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:stone"
+				id: "25C4A581AC80429A"
+				type: "dimension"
+			}]
+			title: "Overworld Stones"
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "271399BED991F412"
+			tasks: [{
+				id: "4FBFFCB100EB3892"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "358330F488CD75B2"
+			tasks: [{
+				id: "47B73ADAB9F3B596"
+				item: "minecraft:granite"
+				type: "item"
+			}]
+			x: -5.6d
+			y: -0.8d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "7FBC9ED123F2CE31"
+			tasks: [{
+				id: "241698BA3E822B40"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "743DE43A446F6831"
+			tasks: [{
+				id: "52847CAE982D994B"
+				item: "kubejs:claystone"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "72C8DB6B6A21D418"
+			tasks: [{
+				id: "437C1C048631BBF4"
+				item: "kubejs:schist"
+				type: "item"
+			}]
+			x: -5.6d
+			y: 5.8d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "7B61D3E3B02B25F8"
+			tasks: [{
+				id: "3E091330F6E282A9"
+				item: "kubejs:gneiss"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "4A9F896B7EF913BF"
+			tasks: [{
+				id: "7499F9D72AB524DB"
+				item: "create:limestone"
+				type: "item"
+			}]
+			x: -3.7d
+			y: 1.1d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "00C1FAED2B66021C"
+			tasks: [{
+				id: "58131E981E981E35"
+				item: "kubejs:shale"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "02CCDCFA7F27891E"
+			tasks: [{
+				id: "5AFF76524A87FA2D"
+				item: "darkerdepths:grimestone"
+				type: "item"
+			}]
+			x: -10.3d
+			y: 3.9d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "195C1679FB4756BA"
+			tasks: [{
+				id: "4B7B1F1051678976"
+				item: "darkerdepths:duskrock"
+				type: "item"
+			}]
+			x: -3.7d
+			y: 3.9d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "6D7E66BD12CC0882"
+			tasks: [{
+				id: "0D8AED3B467E204F"
+				item: "minecraft:dripstone_block"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "6B6AD4A40DAB9EB4"
+			tasks: [{
+				id: "5C304FB531C2940E"
+				item: "darkerdepths:darkslate"
+				type: "item"
+			}]
+			x: -8.4d
+			y: 5.8d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "5D74DA7D8F03E458"
+			tasks: [{
+				id: "1A54FEC5B61DD379"
+				item: "darkerdepths:aridrock"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "48F5761F604C0223"
+			tasks: [{
+				id: "36BA2D6C7F5871A7"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: -8.4d
+			y: -0.8d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "4B225719A3B6CA8A"
+			tasks: [{
+				id: "6B676F06A8B485D4"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D033B6C68308599"]
+			id: "6448B8454B6AEE6F"
+			tasks: [{
+				id: "35E9F81CD0EF7502"
+				item: "minecraft:basalt"
+				type: "item"
+			}]
+			x: -10.3d
+			y: 1.1d
+		}
+		{
+			dependencies: ["22D1B05586484074"]
+			hide_until_deps_complete: true
+			icon_scale: 0.9d
+			id: "77638D6698CCC725"
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Not Finished"
+			tasks: [{
+				id: "6630B88145632850"
+				item: "kubejs:geological_note"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "383C9ACAB37B7DC5"
+			tasks: [{
+				id: "5CD007067D64B15B"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3A1C6C2C5F5965E7"]
+			id: "7867DE61D423BBA8"
+			tasks: [{
+				id: "0E21E29DA3E0FCBF"
+				item: "sgjourney:raw_naquadah"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73F7C99EE4ABCE4F"]
+			id: "3209C4128550BBD3"
+			tasks: [{
+				id: "2DBDFF4EA100A1E6"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "21312E8A3700E4BE"
+			tasks: [{
+				id: "1AA41F880DEE9DD5"
+				item: "kubejs:magnesite"
+				type: "item"
+			}]
+			x: 4.9d
+			y: 2.2d
+		}
+		{
+			dependencies: ["009C96B36DFFDD5B"]
+			id: "34DFDAC6840F28EF"
+			tasks: [{
+				id: "3811EB884FC71C4E"
+				item: "kubejs:fluorite"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["450EC9FCCFB49FA9"]
+			id: "16F39EF6812B7239"
+			tasks: [{
+				id: "3DCBBD8A1026B875"
+				item: "kubejs:malachite"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+	]
+	title: "Geological Notes"
+}

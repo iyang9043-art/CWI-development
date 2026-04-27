@@ -1,0 +1,72 @@
+{
+  "credit": "Made with Blockbench by CerealConJugo",
+  "parent": "block/block",
+  "texture_size": [32, 32],
+  "textures": {
+    "1": "block/anvil",
+    "top": "block/damaged_anvil_top",
+    "particle": "block/anvil"
+  },
+  "elements": [
+    {
+      "name": "Anvil base",
+      "from": [2, 0, 1],
+      "to": [14, 4, 15],
+      "faces": {
+        "north": { "uv": [0, 8, 6, 10], "texture": "#1" },
+        "east": { "uv": [7, 6, 0, 8], "texture": "#1" },
+        "south": { "uv": [0, 8, 6, 10], "texture": "#1" },
+        "west": { "uv": [0, 6, 7, 8], "texture": "#1" },
+        "up": { "uv": [0, 10, 7, 16], "rotation": 90, "texture": "#1" },
+        "down": { "uv": [7, 9, 13, 16], "texture": "#1" }
+      }
+    },
+    {
+      "name": "Wider section beneath top portion",
+      "from": [5, 5, 4],
+      "to": [11, 9, 12],
+      "faces": {
+        "north": { "uv": [4, 3.5, 7, 6], "texture": "#1" },
+        "east": { "uv": [4, 3.5, 0, 6], "texture": "#1" },
+        "south": { "uv": [4, 3.5, 7, 6], "texture": "#1" },
+        "west": { "uv": [0, 3.5, 4, 6], "texture": "#1" }
+      }
+    },
+    {
+      "name": "Anvil top",
+      "from": [2, 9, 0],
+      "to": [14, 16, 16],
+      "faces": {
+        "north": { "uv": [8, 0, 14, 3.5], "texture": "#1" },
+        "east": { "uv": [8, 0, 0, 3.5], "texture": "#1" },
+        "south": { "uv": [14, 0, 8, 3.5], "texture": "#1" },
+        "west": { "uv": [0, 0, 8, 3.5], "texture": "#1" },
+        "up": { "uv": [2, 0, 14, 16], "rotation": 180, "texture": "#top" },
+        "down": { "uv": [7, 3.5, 12, 7], "rotation": 180, "texture": "#1" }
+      }
+    },
+    {
+      "name": "wider section beneath the middle portion",
+      "from": [4, 4, 3],
+      "to": [12, 5, 13],
+      "faces": {
+        "north": { "uv": [7, 7, 11, 7.5], "texture": "#1" },
+        "east": { "uv": [12, 7.5, 7, 8], "texture": "#1" },
+        "south": { "uv": [7, 7, 11, 7.5], "texture": "#1" },
+        "west": { "uv": [7, 7.5, 12, 8], "texture": "#1" },
+        "up": {
+          "uv": [1, 11, 6, 15],
+          "rotation": 90,
+          "texture": "#1",
+          "cullface": "up"
+        }
+      }
+    }
+  ],
+  "display": {
+    "fixed": {
+      "rotation": [0, 90, 0],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

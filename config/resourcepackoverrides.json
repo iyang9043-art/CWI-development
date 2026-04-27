@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "default_packs": [
+  ],
+  "default_overrides": {
+    "force_compatible": true
+  },
+  "pack_overrides": {
+    "2": [
+      "file/MandalasGUI+Dakmode_1.21.8_v2.5.zip",
+      "file/Mandala Utopia.zip"
+    ],
+    "$$2": {
+      "fixed_position": false,
+      "required": false,
+      "hidden": true
+    },
+    "1": [
+      "file/CreateSophBackpacks.zip",
+      "file/SGJourney Refreshed.zip",
+      "file/dyebound-1.0.zip",
+      "file/AETexturesBackport1.20-1.1.zip",
+      "file/Fancy End - RP 1.15+ - 1.3.zip",
+      "file/Fancy Crops v1.3.zip",
+      "file/kaylas_sails.zip",
+      "file/Angel's_Font_v0.8.zip"
+    ],
+    "$$1": {
+      "default_position": "TOP",
+      "fixed_position": true,
+      "required": true,
+      "hidden": true
+    }
+  }
+}

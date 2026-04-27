@@ -1,0 +1,11 @@
+{
+  "general": {
+    "prevent_climbing_in_rain": false,
+    "disable_data_sync": false,
+    "can_crawl_on_ceiling": true,
+    "enable_fallback_rotation": true,
+    "fallback_update_interval": 1,
+    "can_swim": true,
+    "reduced_attack_range": true
+  }
+}

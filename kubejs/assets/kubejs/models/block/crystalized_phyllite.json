@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "darkerdepths:block/mossy_grimestone",
+    "side": "darkerdepths:block/mossy_grimestone",
+    "top": "kubejs:block/crystalized_phyllite_top",
+    "bottom": "darkerdepths:block/grimestone_top"
+  }
+}

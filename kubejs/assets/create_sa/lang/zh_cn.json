@@ -1,0 +1,9 @@
+{
+  "item.create_sa.brass_exoskeleton_chestplate": "青铜外骨骼盔甲",
+  "item.create_sa.brass_jetpack_chestplate": "青铜喷气背包",
+  "item.create_sa.zinc_handle": "优质工具手柄",
+  "item_desc.copper_magnet.desc": "由铜制成，可放大其两端下界合金的磁场。",
+  "item.create_sa.netherite_jetpack_chestplate": "下界合金喷气背包",
+  "item.create_sa.brass_drone_item": "黄铜无人机",
+  "entity.create_sa.brass_drone": "黄铜无人机"
+}

@@ -1,0 +1,97 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "memories"
+	group: ""
+	icon: "kubejs:the_mechanical_engineers_log"
+	id: "37303F1A9BCE9E76"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependency_requirement: "one_completed"
+			icon: "minecraft:writable_book"
+			id: "207E2F3729E91CEC"
+			invisible: true
+			shape: "gear"
+			size: 3.0d
+			subtitle: "Not Finished Yet"
+			tasks: [{
+				id: "59DD8C7F23D11AAD"
+				title: "Not Started Yet"
+				type: "checkmark"
+			}]
+			title: "Lost Notes"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "7C3299CBACBDAE0F"
+			tasks: [{
+				id: "15D53F1D3832F7F0"
+				item: "kubejs:the_cleaners_log"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "74B858ACAA29F9D8"
+			tasks: [{
+				id: "53CED5C536FF7B33"
+				item: "kubejs:the_mechanical_engineers_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "11993D43DAEFB516"
+			tasks: [{
+				id: "45565DB4D4D23BA9"
+				item: "kubejs:the_fluid_engineers_log"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "29D5C51D5B2A259F"
+			tasks: [{
+				id: "783329405CA86ABD"
+				item: "kubejs:the_precision_manufacturing_engineers_log"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "0EE2743FF6D048DD"
+			tasks: [{
+				id: "6DDFFC283C9EEE5C"
+				item: "kubejs:the_material_engineers_log"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["207E2F3729E91CEC"]
+			id: "3E0DD88A307809D4"
+			tasks: [{
+				id: "547E80AFEAF4744C"
+				item: "kubejs:the_electrical_engineers_log"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+	]
+	title: "Losted Logs"
+}

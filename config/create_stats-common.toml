@@ -1,0 +1,60 @@
+
+[data]
+	#Max samples stored per display panel (default 600 = 10 min at 1/sec)
+	#Range: 60 ~ 6000
+	panelBufferSize = 600
+	#Max samples stored per recorder (default 1800 = 30 min at 1/sec)
+	#Range: 60 ~ 18000
+	recorderBufferSize = 1800
+	#Ticks between samples (20 = 1 second). Lower = more resolution, more memory
+	#Range: 1 ~ 200
+	sampleIntervalTicks = 20
+
+[display]
+	#Ticks between client sync updates for display panels
+	#Range: 5 ~ 200
+	panelSyncIntervalTicks = 20
+	#Passive refresh interval for stats-link auto-read sources (20 = default, 10 = high refresh, 5 = aggressive)
+	#Range: 5 ~ 20
+	statsLinkPassiveRefreshTicks = 20
+	#Maximum width of a multiblock display panel
+	#Range: 1 ~ 16
+	maxMultiblockWidth = 8
+	#Maximum height of a multiblock display panel
+	#Range: 1 ~ 16
+	maxMultiblockHeight = 8
+	#Max block distance at which panel graphs render
+	#Range: 16 ~ 128
+	maxRenderDistance = 48
+
+[export]
+	#Allow CSV export from recorders
+	enableCsvExport = true
+	#Auto-export interval in minutes (0 = disabled)
+	#Range: 0 ~ 60
+	csvAutoExportIntervalMinutes = 0
+
+[dashboard]
+	#Minimum multiblock blocks (W*H) to auto-activate dashboard mode
+	#Range: 4 ~ 64
+	dashboardMinBlocks = 6
+	#Minimum width or height to allow dashboard (prevents thin strips)
+	#Range: 2 ~ 8
+	dashboardMinDimension = 3
+	#Enable scrolling alert ticker in dashboard mode
+	dashboardTickerEnabled = true
+	#Ticker scroll speed in pixels per texture update (1-5)
+	#Range: 1 ~ 5
+	dashboardTickerSpeed = 1
+
+[topology]
+	#Default maximum nodes in topology map (higher = more CPU). Panel settings can lower this per display.
+	#Range: 10 ~ 1000
+	topologyMaxNodes = 300
+	#Radius to search for kinetic seed blocks
+	#Range: 1 ~ 16
+	topologyScanRadius = 5
+	#Force-directed layout iterations (higher = better layout, more CPU)
+	#Range: 30 ~ 300
+	topologyLayoutIterations = 150
+
