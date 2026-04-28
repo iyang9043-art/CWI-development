@@ -76,7 +76,7 @@ CreateEvents.spoutHandler(function(event) {
     buddingGrow(
         "kubejs:amethyst_evolution",
         [
-            { id: "minecraft:water", amount: 100, chance: 0.5, multiplier: 1 },
+            { id: "minecraft:water", amount: 200, chance: 0.5, multiplier: 1 },
             { id: "minecraft:lava",  amount: 50,  chance: 0.75, multiplier: 2 },
             { id: "kubejs:caustic_soda", amount: 50, chance: 1, multiplier: 3 }
         ],
@@ -90,7 +90,7 @@ CreateEvents.spoutHandler(function(event) {
     buddingGrow(
         "kubejs:quartz_evolution",
         [
-            { id: "minecraft:water", amount: 100, chance: 0.5, multiplier: 1 },
+            { id: "minecraft:water", amount: 200, chance: 0.5, multiplier: 1 },
             { id: "minecraft:lava",  amount: 50,  chance: 0.75, multiplier: 2 },
             { id: "kubejs:caustic_soda", amount: 50, chance: 1, multiplier: 3 }
         ],
@@ -104,7 +104,7 @@ CreateEvents.spoutHandler(function(event) {
     buddingGrow(
         "kubejs:infected_amethyst_evolution",
         [
-            { id: "minecraft:water", amount: 100, chance: 0.5, multiplier: 2 },
+            { id: "minecraft:water", amount: 200, chance: 0.5, multiplier: 2 },
             { id: "minecraft:lava",  amount: 50,  chance: 0.75, multiplier: 4 },
             { id: "kubejs:caustic_soda", amount: 50, chance: 1, multiplier: 6 }
         ],
@@ -118,7 +118,7 @@ CreateEvents.spoutHandler(function(event) {
     buddingGrow(
         "kubejs:infected_quartz_evolution",
         [
-            { id: "minecraft:water", amount: 100, chance: 0.5, multiplier: 2 },
+            { id: "minecraft:water", amount: 200, chance: 0.5, multiplier: 2 },
             { id: "minecraft:lava",  amount: 50,  chance: 0.75, multiplier: 4 },
             { id: "kubejs:caustic_soda", amount: 50, chance: 1, multiplier: 6 }
         ],
@@ -132,9 +132,9 @@ CreateEvents.spoutHandler(function(event) {
     buddingGrow(
         "kubejs:amber_evolution",
         [
-            { id: "minecraft:water", amount: 100, chance: 0.1, multiplier: 1 },
-            { id: "tfmg:sulfuric_acid",  amount: 50,  chance: 0.35, multiplier: 1 },
-            { id: "tfmg:ethylene", amount: 50, chance: 0.7, multiplier: 1 }
+            { id: "minecraft:water", amount: 200, chance: 0.1, multiplier: 1 },
+            { id: "tfmg:sulfuric_acid",  amount: 50,  chance: 0.5, multiplier: 1 },
+            { id: "tfmg:ethylene", amount: 50, chance: 0.75, multiplier: 1 }
         ],
         "darkerdepths:porous_petrified_log",
         "darkerdepths:amber_cluster"

@@ -1,0 +1,17 @@
+
+[Category]
+	#The amount of damage that enemy will inflicted when user has thorn skin activated.
+	"Thorn Skin Damage" = 3.0
+	#The amount of time the tea will give after drink [second].
+	"Tea Tick Base" = 45.0
+	#The value that control how herbs grow, higher value will grow faster
+	"Plant Grow Base" = 0.05
+	#The value that control amount of damage bomb pod will done to entity. higher value deal more damage.
+	"Bomb Pod Base Damage" = 1.5
+	#The value that control how fast teapot will brew a tea, higher number will brew faster.
+	"Teapot Working Tick" = 1.0
+	#The value that control amount of percentage that cleansing concoction will fix item.
+	"Cleansing Concoction Repair" = 0.1
+	#The value that control amount of percentage that pedestal will fix item.
+	"Cleansing Pedestal Repair" = 1.0
+
