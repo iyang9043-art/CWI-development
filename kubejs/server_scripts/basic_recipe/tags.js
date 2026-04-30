@@ -101,7 +101,6 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:ingots', 'kubejs:rusted_iron_ingot')
   event.add('forge:ingots', 'kubejs:nylon_ingot')
-  event.add('forge:ingots', 'kubejs:plasma_ingot')
   event.add('forge:ingots', 'kubejs:magnesium_ingot')
   event.add('forge:ingots', 'kubejs:cobalt_ingot')
   event.add('forge:ingots', 'kubejs:tin_ingot')

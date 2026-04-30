@@ -1,0 +1,21 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": [
+                    "minecraft:glowstone",
+                    "minecraft:sea_lantern",
+                    "minecraft:lantern",
+                    "minecraft:jack_o_lantern",
+                    "minecraft:shroomlight",
+                    "minecraft:beacon",
+                    "minecraft:verdant_froglight",
+                    "minecraft:pearlescent_froglight",
+                    "minecraft:ochre_froglight"
+                ]
+            }
+        }
+    }
+}
