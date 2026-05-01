@@ -2,53 +2,58 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
 
     let $AllFanProcessingTypes = Java.loadClass('com.simibubi.create.content.kinetics.fan.processing.AllFanProcessingTypes')
     let $FanProcessingType = Java.loadClass('com.simibubi.create.content.kinetics.fan.processing.FanProcessingType')
-    let $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes')
     let $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
     let $ArrayList = Java.loadClass('java.util.ArrayList')
     let $Context = Java.loadClass('dev.latvian.mods.rhino.Context')
     let $KubeJS = Java.loadClass('dev.latvian.mods.kubejs.KubeJS')
     let $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity')
     let $MobEffectInstance = Java.loadClass('net.minecraft.world.effect.MobEffectInstance')
-    
+    let $BuiltInRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
+    let $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
+    let fallingAcidParticle = $BuiltInRegistries.PARTICLE_TYPE.get(new $ResourceLocation('biomancy:falling_acid'))
+    let toxinGasParticle = $BuiltInRegistries.PARTICLE_TYPE.get(new $ResourceLocation('biomancy:toxin_gas'))
+
     let context = $KubeJS.getStartupScriptManager().context
- 
-    const chargingRecipes = {
+
+    const corrosionRecipes = {
         'create:iron_sheet': 'minecraft:iron_ingot'
     }
- 
-    const chargingTypeImplementation = {
- 
+
+    const corrosionTypeImplementation = {
+
         isValidAt(level, pos) {
             if (!level || !pos) return false
-            return (level.getBlockState(pos).block.id === 'tfmg:sulfuric_acid') || (level.getBlockState(pos).block.id === 'kubejs:concentrated_sulfuric_acid')
+            return (level.getBlockState(pos).block.id === 'tfmg:sulfuric_acid')
+            || (level.getBlockState(pos).block.id === 'kubejs:concentrated_sulfuric_acid')
+            //|| (level.getBlockState(pos).block.id === 'create_connected:sulfuric_acid_catalyst')
         },
- 
+
         getPriority() {
             return 450
         },
- 
+
         canProcess(stack, level) {
             if (!stack || !level) return false
-            if (chargingRecipes[stack.id]) return true
+            if (corrosionRecipes[stack.id]) return true
             return false
         },
- 
+
         process(stack, level) {
             if (!stack || !level) return null
- 
+
             let itemId = stack.id
-            let resultId = chargingRecipes[itemId]
+            let resultId = corrosionRecipes[itemId]
             
             if (!resultId) return null
- 
+
             let result = Item.getItem(resultId)
             let arrayList = new $ArrayList()
             
             arrayList.add(new $ItemStack(result, stack.count))
- 
+
             return arrayList
         },
- 
+
         spawnProcessingParticles(level, pos) {
             if (!level || !pos) return
             if (!level.random) return
@@ -59,7 +64,7 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
             
             if (level.random.nextInt(5) == 0) {
                 level.addParticle(
-                    $ParticleTypes.SNOWFLAKE,
+                    fallingAcidParticle,
                     x + (level.random.nextFloat() - 0.5) * 0.5,
                     y + 0.1,
                     z + (level.random.nextFloat() - 0.5) * 0.5,
@@ -67,24 +72,21 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
                 )
             }
         },
- 
+
         morphAirFlow(particleAccess, random) {
             if (!particleAccess || !random) return
- 
-            particleAccess.setColor(0xbc0000)
+
+            particleAccess.setColor(0xadac50)
             particleAccess.setAlpha(0.75)
             
-            if (random.nextFloat() < 0.04) {
-                particleAccess.spawnExtraParticle($ParticleTypes.ELECTRIC_SPARK, 0.2)
-            }
             if (random.nextFloat() < 0.02) {
-                particleAccess.spawnExtraParticle($ParticleTypes.GLOW, 0.15)
+                particleAccess.spawnExtraParticle(toxinGasParticle, 0.2)
             }
         },
- 
+
         affectEntity(entity, level) {
             if (!entity || !level) return
- 
+
             if (
                 !level.clientSide
                 && entity.alive
@@ -94,12 +96,13 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
                     entity.setSecondsOnFire(0)
                 }
 
-                entity.addEffect(new $MobEffectInstance('minecraft:glowing', 60, 6))
+                entity.addEffect(new $MobEffectInstance('biomancy:armor_shred', 60, 6))
+                entity.addEffect(new $MobEffectInstance('biomancy:corrosive', 60, 3))
             }
         }
     }
- 
-    let chargingType = $Context.jsToJava(context, chargingTypeImplementation, $FanProcessingType)
- 
-    $AllFanProcessingTypes.register('charging', chargingType)
+
+    let corrosionType = $Context.jsToJava(context, corrosionTypeImplementation, $FanProcessingType)
+
+    $AllFanProcessingTypes.register('corrosion', corrosionType)
 })
