@@ -38,21 +38,6 @@ StartupEvents.registry('item', event => {
       .hunger(1)
       .saturation(0.5)})
 
-  event.create('silverfish_abdomen')
-    .food(food => {food
-      .hunger(3)
-      .saturation(0.5)})
-
-  event.create('spider_meat')
-    .food(food => {food
-      .hunger(5)
-      .saturation(0.5)})
-
-  event.create('smoked_spider_meat')
-    .food(food => {food
-      .hunger(8)
-      .saturation(1)})
-
 //armors
 
   event.create('bronze_helmet', 'helmet')

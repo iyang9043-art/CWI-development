@@ -1,0 +1,7 @@
+{
+    "parent": "block/observer",
+    "textures": {
+        "bottom": "kubejs:block/observer_back_on",
+        "side": "kubejs:block/observer_side_on"
+    }
+}

@@ -96,8 +96,8 @@ ForgeModEvents.onEvent('net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEve
                     entity.setSecondsOnFire(0)
                 }
 
-                entity.addEffect(new $MobEffectInstance('biomancy:armor_shred', 60, 6))
-                entity.addEffect(new $MobEffectInstance('biomancy:corrosive', 60, 3))
+                entity.addEffect(new $MobEffectInstance('biomancy:armor_shred', 10, 0))
+                entity.addEffect(new $MobEffectInstance('biomancy:corrosive', 10, 0))
             }
         }
     }
