@@ -22,9 +22,7 @@
     "water_fog_color": -16248305
   },
   "features": [
-    [
-      "modpack:replaces/forsaken_land"
-    ],
+    [],
     [
       "minecraft:lake_lava_underground",
       "minecraft:lake_lava_surface",

@@ -46,8 +46,6 @@ LootJS.modifiers((event) => {
 
     event.addLootTableModifier("minecraft:entities/silverfish")
     .removeLoot("miners_delight:silverfish_eggs")
-    .removeLoot("dungeonsdelight:silverfish_abdomen")
-    .addLoot("dungeonsdelight:silverfish_abdomen")
     .randomChanceWithLooting(0.5, 1)
     .addLoot("miners_delight:silverfish_eggs");
     event.addLootTableModifier("minecraft:entities/silverfish")
@@ -56,12 +54,10 @@ LootJS.modifiers((event) => {
     .addLoot("miners_delight:silverfish_eggs");
 
     event.addLootTableModifier("minecraft:entities/spider")
-    .removeLoot("dungeonsdelight:spider_meat")
     .removeLoot("miners_delight:arthropod")
     .removeLoot("vital_herbs:silken_husk")
     .removeLoot("minecraft:spider_eye")
     .removeLoot("minecraft:string")
-    .addLoot("dungeonsdelight:spider_meat")
     .randomChanceWithLooting(0.3, 1)
     .addLoot("minecraft:spider_eye");
     event.addLootTableModifier("minecraft:entities/spider")
@@ -76,12 +72,10 @@ LootJS.modifiers((event) => {
     .addLoot("minecraft:string");
 
     event.addLootTableModifier("minecraft:entities/cave_spider")
-    .removeLoot("dungeonsdelight:spider_meat")
     .removeLoot("miners_delight:arthropod")
     .removeLoot("vital_herbs:silken_husk")
     .removeLoot("minecraft:spider_eye")
     .removeLoot("minecraft:string")
-    .addLoot("dungeonsdelight:spider_meat")
     .randomChanceWithLooting(0.3, 1)
     .addLoot("minecraft:spider_eye");
     event.addLootTableModifier("minecraft:entities/cave_spider")

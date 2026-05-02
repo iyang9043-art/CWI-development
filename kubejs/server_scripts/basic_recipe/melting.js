@@ -191,7 +191,6 @@ ServerEvents.recipes(event => {
 //basinCasting
   
   basinCasting('kubejs:molten_slime',1000,43,'minecraft:slime_block')
-  basinCasting('kubejs:molten_pig_iron',1000,1327,'kubejs:pig_iron_block')
   basinCasting('tfmg:molten_slag',1000,1482,'tfmg:slag_block')
 
   tableCasting('kubejs:terracotta_ingot_mold','tfmg:molten_plastic',90,46,'tfmg:plastic_sheet')

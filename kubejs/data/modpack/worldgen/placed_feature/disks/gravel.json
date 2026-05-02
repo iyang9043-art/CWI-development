@@ -2,6 +2,10 @@
   "feature": "modpack:disks/gravel",
   "placement": [
     {
+      "type": "minecraft:count",
+      "count": 2
+    },
+    {
       "type": "minecraft:in_square"
     },
     {

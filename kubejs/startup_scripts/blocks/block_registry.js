@@ -732,15 +732,6 @@ StartupEvents.registry('block', event => {
     .tagBlock('minecraft:needs_stone_tool')
     .mapColor('#FF5500')
 
-  event.create('pig_iron_block')
-    .stoneSoundType()
-    .hardness(5)
-    .resistance(6)
-    .requiresTool(true)
-    .tagBlock('minecraft:mineable/pickaxe')
-    .tagBlock('minecraft:needs_stone_tool')
-    .mapColor('#FF5500')
-
   event.create('charcoal_block')
     .stoneSoundType()
     .hardness(5)
