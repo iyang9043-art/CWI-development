@@ -79,7 +79,7 @@ ServerEvents.tags('item', event => {
   event.add('modpack:bronze7', 'kubejs:bronze_leggings')
   event.add('modpack:bronze4', 'kubejs:bronze_boots')
 
-//knives
+//wrench
 
   event.add('forge:tools/wrench', 'clanginghowl:industrial_adjustable_wrench')
   event.add('create:chain_rideable', 'clanginghowl:industrial_adjustable_wrench')
@@ -254,6 +254,12 @@ ServerEvents.tags('block', event => {
     }
   })
 
+//soul_fire_base_block
+
+  event.add('minecraft:soul_fire_base_blocks', 'minecraft:reinforced_deepslate')
+  event.add('minecraft:soul_fire_base_blocks', 'minecraft:sculk')
+  event.add('minecraft:soul_fire_base_blocks', 'minecraft:sculk_catalyst')
+
 //mineable
 
   event.remove('minecraft:mineable/axe', 'minecraft:crafting_table')
@@ -324,6 +330,20 @@ ServerEvents.tags('block', event => {
   event.add('minecraft:stone_ore_replaceables', 'kubejs:cobbled_granite')
   event.add('minecraft:stone_ore_replaceables', 'kubejs:cobbled_shale')
   
+//carver_replace
+
+  event.add('overworld_carver_replaceables', '#minecraft:base_stone_overworld')
+  event.add('overworld_carver_replaceables', '#minecraft:terracotta')
+  event.add('overworld_carver_replaceables', '#minecraft:iron_ores')
+  event.add('overworld_carver_replaceables', '#minecraft:copper_ores')
+  event.add('overworld_carver_replaceables', 'minecraft:water')
+  event.add('overworld_carver_replaceables', 'minecraft:sandstone')
+  event.add('overworld_carver_replaceables', 'minecraft:red_sandstone')
+  event.add('overworld_carver_replaceables', 'minecraft:calcite')
+  event.add('overworld_carver_replaceables', 'minecraft:packed_ice')
+  event.add('overworld_carver_replaceables', 'minecraft:raw_iron_block')
+  event.add('overworld_carver_replaceables', 'minecraft:raw_copper_block')
+
 //arid_ground
 
   event.add('darkerdepths:arid_ground', '#minecraft:stone_ore_replaceables')

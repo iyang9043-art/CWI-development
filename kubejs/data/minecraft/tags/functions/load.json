@@ -1,5 +1,6 @@
 {
-    "values": [
-        "dynlight:load"
-    ]
+  "values": [
+    "sculk_expansion:clock",
+    "dynamic_lights:internal/load"
+  ]
 }

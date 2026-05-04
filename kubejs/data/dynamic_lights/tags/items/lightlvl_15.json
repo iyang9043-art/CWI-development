@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:beacon",
+    "minecraft:glowstone",
+    "minecraft:lantern",
+    "minecraft:campfire",
+    "minecraft:lava_bucket"
+  ]
+}

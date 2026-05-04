@@ -5,114 +5,62 @@ ServerEvents.recipes(event => {
   function hammering(input,output){
     event.custom({
       "type": "createdieselgenerators:hammering",
-      "ingredients": [
-        {
-          "item": input
-        }
-      ],
-      "results": [
-        {
-          "item": output
-        }
-      ]
-    })
-  }
+      "ingredients":{"item": input},
+      "results":{"item": output}
+    })}
 
   function rolling(input,output){
     event.custom({
       "type":"createaddition:rolling",
-      "input": {
-        "item": input
-      },
-      "result": {
-        "item": output,
-        "count": 2
-      }
-    })
-  }
+      "input": {"item": input},
+      "result": {"item": output,"count": 2}
+    })}
 
   function liquidBurning(input,amount,burnTime,superheated){
     event.custom({
 	    "type":"createaddition:liquid_burning",
-	    "input": {
-      	"fluid": input,
-      	"amount": amount
-	    },
+	    "input": {"fluid": input,"amount": amount},
 	    "burnTime": burnTime,
-	    "superheated": superheated
-    })
-  }
+      "superheated": superheated
+    })}
 
   function charging(input,output,energy,chargeRate){
     event.custom({
 	    "type":"createaddition:charging",
-	    "input": {
-      	"item": input,
-		    "count": 1
-	    },
-	    "result": {
-		    "item": output,
-		    "count": 1
-	    },
+	    "input": {"item": input,"count": 1 },
+	    "result": {"item": output,"count": 1},
 	    "energy": energy,
-	    "maxChargeRate": chargeRate
-    })
-  }
+      "maxChargeRate": chargeRate
+    })}
 
   function turning(input,output,count){
     event.custom({
 	    "type":"vintageimprovements:turning",
-	    "ingredients": [
-	    	{
-	    		"item": input
-	    	}
-	    ],
-	    "results": [
-        {
-            "item": output,
-            "count": count
-        }
-      ]
-    })
-  }
+	    "ingredients": {"item": input},
+	    "results": {"item": output,"count": count}
+    })}
 
   function demolding(input,output){
     event.custom({
       "type": "ratatouille:demolding",
-      "ingredients": [
-        {
-          "item": input
-        }
-      ],
-      "results": [
-        {
-          "item": output
-        }
-      ]
-    })
-  }
+      "ingredients": {"item": input},
+      "results": {"item": output}
+    })}
 
   function curving(head,input,output){
     event.custom({
       "type": "vintageimprovements:curving",
       "itemAsHead": head,
-      "ingredients": [
-        {
-          "item": input
-        }
-      ],
-      "results": [
-        {
-          "item": output
-        }
-      ]
-    })
-  }
+      "ingredients": {"item": input},
+      "results": {"item": output}
+    })}
 
-  event.custom({"type": "create:cutting","ingredients": [{"item": "createdeco:industrial_iron_sheet"}],"results": [{"item": "createdieselgenerators:mold","nbt": {"Mold": "createdieselgenerators:bar"}}]})
-  event.custom({"type": "create:cutting","ingredients": [{"item": "createdeco:industrial_iron_sheet"}],"results": [{"item": "createdieselgenerators:mold","nbt": {"Mold": "createdieselgenerators:chain"}}]})
-  event.custom({"type": "create:cutting","ingredients": [{"item": "createdeco:industrial_iron_sheet"}],"results": [{"item": "createdieselgenerators:mold","nbt": {"Mold": "createdieselgenerators:lines"}}]})
-  event.custom({"type": "create:cutting","ingredients": [{"item": "createdeco:industrial_iron_sheet"}],"results": [{"item": "createdieselgenerators:mold","nbt": {"Mold": "createdieselgenerators:bowl"}}]})
+
+  function addStoragePair(bigItem, smallItem, count) {
+    var smallStack = count + 'x ' + smallItem;
+    event.shapeless(Item.of(bigItem), [smallStack]);
+    event.shapeless(Item.of(smallStack), [bigItem]);
+  }
 
 //curving
 
@@ -190,83 +138,23 @@ ServerEvents.recipes(event => {
 
 //conversion
 
-  event.shapeless(Item.of('kubejs:rubber_block'),['9x #modpack:rubber'])
-  event.shapeless(Item.of('9x kubejs:rubber'),['kubejs:rubber_block'])
-
-  event.shapeless(Item.of('kubejs:polyvinyl_chloride_plastic_block'),['9x kubejs:polyvinyl_chloride_plastic_sheet'])
-  event.shapeless(Item.of('9x kubejs:polyvinyl_chloride_plastic_sheet'),['kubejs:polyvinyl_chloride_plastic_block'])
-
-  event.shapeless(Item.of('kubejs:sturdy_sheet_block'),['9x create:sturdy_sheet'])
-  event.shapeless(Item.of('9x create:sturdy_sheet'),['kubejs:sturdy_sheet_block'])
-
-  event.shapeless(Item.of('kubejs:magnesium_block'),['9x kubejs:magnesium_ingot'])
-  event.shapeless(Item.of('9x kubejs:magnesium_ingot'),['kubejs:magnesium_block'])
-
-  event.shapeless(Item.of('kubejs:magnesium_ingot'),['9x kubejs:magnesium_nugget'])
-  event.shapeless(Item.of('9x kubejs:magnesium_nugget'),['kubejs:magnesium_ingot'])
-
-  event.shapeless(Item.of('kubejs:bronze_block'),['9x kubejs:bronze_ingot'])
-  event.shapeless(Item.of('9x kubejs:bronze_ingot'),['kubejs:bronze_block'])
-
-  event.shapeless(Item.of('kubejs:bronze_ingot'),['9x kubejs:bronze_nugget'])
-  event.shapeless(Item.of('9x kubejs:bronze_nugget'),['kubejs:bronze_ingot'])
-
-  event.shapeless(Item.of('kubejs:raw_tin_block'),['9x kubejs:raw_tin'])
-  event.shapeless(Item.of('9x kubejs:raw_tin'),['kubejs:raw_tin_block'])
-
-  event.shapeless(Item.of('kubejs:tin_block'),['9x kubejs:tin_ingot'])
-  event.shapeless(Item.of('9x kubejs:tin_ingot'),['kubejs:tin_block'])
-
-  event.shapeless(Item.of('kubejs:tin_ingot'),['9x kubejs:tin_nugget'])
-  event.shapeless(Item.of('9x kubejs:tin_nugget'),['kubejs:tin_ingot'])
-
-  event.shapeless(Item.of('kubejs:raw_silver_block'),['9x kubejs:raw_silver'])
-  event.shapeless(Item.of('9x kubejs:raw_silver'),['kubejs:raw_silver_block'])
-
-  event.shapeless(Item.of('kubejs:silver_block'),['9x kubejs:silver_ingot'])
-  event.shapeless(Item.of('9x kubejs:silver_ingot'),['kubejs:silver_block'])
-
-  event.shapeless(Item.of('kubejs:silver_ingot'),['9x kubejs:silver_nugget'])
-  event.shapeless(Item.of('9x kubejs:silver_nugget'),['kubejs:silver_ingot'])
-
-  event.shapeless(Item.of('kubejs:raw_cobalt_block'),['9x kubejs:raw_cobalt'])
-  event.shapeless(Item.of('9x kubejs:raw_cobalt'),['kubejs:raw_cobalt_block'])
-
-  event.shapeless(Item.of('kubejs:cobalt_block'),['9x kubejs:cobalt_ingot'])
-  event.shapeless(Item.of('9x kubejs:cobalt_ingot'),['kubejs:cobalt_block'])
-
-  event.shapeless(Item.of('kubejs:cobalt_ingot'),['9x kubejs:cobalt_nugget'])
-  event.shapeless(Item.of('9x kubejs:cobalt_nugget'),['kubejs:cobalt_ingot'])
-
-  event.shapeless(Item.of('createmetallurgy:refractory_mortar'),['4x createmetallurgy:refractory_mortar_ball'])
-  event.shapeless(Item.of('4x createmetallurgy:refractory_mortar_ball'),['createmetallurgy:refractory_mortar'])
-
-  event.shapeless(Item.of('darkerdepths:amber_block'),['4x darkerdepths:amber'])
-  event.shapeless(Item.of('4x darkerdepths:amber'),['darkerdepths:amber_block'])
+  addStoragePair('kubejs:rubber_block', 'kubejs:rubber', 9)
+  addStoragePair('kubejs:polyvinyl_chloride_plastic_block', 'kubejs:polyvinyl_chloride_plastic_sheet', 9)
+  addStoragePair('kubejs:sturdy_sheet_block', 'create:sturdy_sheet', 9)
+  addStoragePair('kubejs:magnesium_block', 'kubejs:magnesium_ingot', 9)
+  addStoragePair('kubejs:magnesium_ingot', 'kubejs:magnesium_nugget', 9)
+  addStoragePair('kubejs:bronze_block', 'kubejs:bronze_ingot', 9)
+  addStoragePair('kubejs:bronze_ingot', 'kubejs:bronze_nugget', 9)
+  addStoragePair('kubejs:raw_tin_block', 'kubejs:raw_tin', 9)
+  addStoragePair('kubejs:tin_block', 'kubejs:tin_ingot', 9)
+  addStoragePair('kubejs:tin_ingot', 'kubejs:tin_nugget', 9)
+  addStoragePair('kubejs:raw_silver_block', 'kubejs:raw_silver', 9)
+  addStoragePair('kubejs:silver_block', 'kubejs:silver_ingot', 9)
+  addStoragePair('kubejs:silver_ingot', 'kubejs:silver_nugget', 9)
+  addStoragePair('kubejs:raw_cobalt_block', 'kubejs:raw_cobalt', 9)
+  addStoragePair('kubejs:cobalt_block', 'kubejs:cobalt_ingot', 9)
+  addStoragePair('kubejs:cobalt_ingot', 'kubejs:cobalt_nugget', 9)
+  addStoragePair('createmetallurgy:refractory_mortar', 'createmetallurgy:refractory_mortar_ball', 4)
+  addStoragePair('darkerdepths:amber_block', 'darkerdepths:amber', 4)
 
 })
-
-ServerEvents.tags('item', event => {
-    event.add('kubejs:no_gravity_items', 'clanginghowl:extraterrestrial_energy_crystal');
-});
-
-EntityEvents.spawned('item', event => {
-  let entity = event.entity;
-  if (entity.item.hasTag('kubejs:no_gravity_items')) {
-    entity.setNoGravity(true);
-    startFloating(entity);
-  }
-});
-
-function startFloating(entity) {
-  if (!entity.isAlive()) return;
-  entity.server.scheduleInTicks(10, function(callback) {
-    if (!entity.isAlive()) return;
-    entity.age = 0;
-    let floatY = Math.sin(entity.tickCount * 0.1) * 0.015;
-    entity.setDeltaMovement(0, floatY, 0);
-    if (entity.isAlive()) {
-      startFloating(entity);
-    }
-  });
-}
