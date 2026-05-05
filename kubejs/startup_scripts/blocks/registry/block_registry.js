@@ -1,3 +1,5 @@
+// priority: 1
+
 StartupEvents.registry('block', event => {
 
 //plants
@@ -905,6 +907,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('minecraft:needs_diamond_tool')
+    .tagBlock('kubejs:unbreakable')
     .mapColor('#FF5500')
 
   event.create('steel_armor_penetrated')
@@ -914,6 +917,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('minecraft:needs_diamond_tool')
+    .tagBlock('kubejs:unbreakable')
     .mapColor('#FF5500')
 
   event.create('steel_armor_safe')
@@ -923,6 +927,7 @@ StartupEvents.registry('block', event => {
     .requiresTool(true)
     .tagBlock('minecraft:mineable/pickaxe')
     .tagBlock('minecraft:needs_diamond_tool')
+    .tagBlock('kubejs:unbreakable')
     .mapColor('#FF5500')
 
   event.create('computer_heat_vent')
@@ -1085,7 +1090,7 @@ StartupEvents.registry('block', event => {
 
   event.create('incomplete_diesel_engine')
     .soundType('metal')
-    //.texture('particle', 'tfmg:block/heavy_machinery_casing')
+    .texture('particle', 'tfmg:block/heavy_machinery_casing')
     .hardness(3)
     .resistance(3)
     .requiresTool(true)
@@ -1097,7 +1102,7 @@ StartupEvents.registry('block', event => {
 
   event.create('incomplete_large_diesel_engine')
     .soundType('metal')
-    //.texture('particle', 'tfmg:block/heavy_machinery_casing')
+    .texture('particle', 'tfmg:block/heavy_machinery_casing')
     .hardness(3)
     .resistance(3)
     .requiresTool(true)
@@ -1109,7 +1114,7 @@ StartupEvents.registry('block', event => {
 
   event.create('incomplete_huge_diesel_engine')
     .soundType('metal')
-    //.texture('particle', 'tfmg:block/heavy_machinery_casing')
+    .texture('particle', 'tfmg:block/heavy_machinery_casing')
     .hardness(3)
     .resistance(3)
     .requiresTool(true)

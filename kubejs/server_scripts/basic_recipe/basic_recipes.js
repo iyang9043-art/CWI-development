@@ -5,8 +5,8 @@ ServerEvents.recipes(event => {
   function hammering(input,output){
     event.custom({
       "type": "createdieselgenerators:hammering",
-      "ingredients":{"item": input},
-      "results":{"item": output}
+      "ingredients":[{"item": input}],
+      "results":[{"item": output}]
     })}
 
   function rolling(input,output){
@@ -36,8 +36,8 @@ ServerEvents.recipes(event => {
   function turning(input,output,count){
     event.custom({
 	    "type":"vintageimprovements:turning",
-	    "ingredients": {"item": input},
-	    "results": {"item": output,"count": count}
+	    "ingredients": [{"item": input}],
+	    "results": [{"item": output,"count": count}]
     })}
 
   function demolding(input,output){
@@ -51,8 +51,8 @@ ServerEvents.recipes(event => {
     event.custom({
       "type": "vintageimprovements:curving",
       "itemAsHead": head,
-      "ingredients": {"item": input},
-      "results": {"item": output}
+      "ingredients": [{"item": input}],
+      "results": [{"item": output}]
     })}
 
 

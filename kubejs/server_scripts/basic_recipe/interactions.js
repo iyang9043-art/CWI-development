@@ -60,31 +60,3 @@ LevelEvents.tick(event => {
         }
     })
 })
-
-BlockEvents.rightClicked('', event => {
-    const { block, player, level } = event;
-
-    if (block.id === "ad_astra:moon_stone"
-        && player.isShiftKeyDown()) {
-        
-        player.addItemCooldown(event.item, 20)
-        player.level.playSound(null, player.x, player.y, player.z, 'minecraft:item.axe.strip', 'players', 0.5, 0.4)
-        player.swing()
-        
-        const count = Math.floor(Math.random() * 2);
-        if (count > 0) {
-            player.give(Item.of("", count));
-        }
-        if (Math.random() < 0.02) {
-            player.give(Item.of("minecraft:flint"));
-        }
-        if (Math.random() < 0.01) {
-            player.give(Item.of("minecraft:flint"));
-        }
-        
-        player.foodLevel = Math.max(player.foodLevel - 1, 0);
-        player.saturationLevel = Math.max(player.saturationLevel - 1.0, 0.0);
-
-        event.cancel();
-    }
-});

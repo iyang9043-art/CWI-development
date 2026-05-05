@@ -24,8 +24,11 @@
   "features": [
     [],
     [
-      "minecraft:lake_lava_underground",
-      "minecraft:lake_lava_surface",
+      "modpack:structures/lava_lake_granite_underground",
+      "modpack:structures/lava_lake_granite_surface",
+      "modpack:structures/lava_lake_basalt_underground",
+      "modpack:structures/lava_lake_basalt_surface",
+
       "modpack:structures/acid_lake",
       "modpack:structures/ashstone_place",
       "modpack:structures/scrap_place",
