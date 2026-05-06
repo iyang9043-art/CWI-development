@@ -24,7 +24,7 @@
                         }
                     }
                 },
-                "argument2": "deeper_oceans:overworld/warped_factor"
+                "argument2": "modpack:overworld/warped_factor"
             }
         }
     },

@@ -1,11 +1,11 @@
 {
   "type": "minecraft:disk",
   "config": {
-    "half_height": 2,
+    "half_height": 3,
     "radius": {
       "type": "minecraft:uniform",
       "value": {
-        "max_inclusive": 2,
+        "max_inclusive": 5,
         "min_inclusive": 1
       }
     },

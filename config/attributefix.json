@@ -66,6 +66,17 @@
         "value": 5
       }
     },
+    "sons_of_sins:cooldown_cap": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 240,
+        "value": 240
+      }
+    },
     "minecraft:generic.movement_speed": {
       "enabled": true,
       "min": {

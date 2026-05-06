@@ -10,8 +10,7 @@ const suspiciousBlocks = [
         block_name: "kubejs:suspicious_depleted_dirt",
         turns_into: "kubejs:depleted_dirt",
         brushing_sound: SoundType.SUSPICIOUS_GRAVEL.getStepSound(),
-        brushingFinishedSound: SoundType.ANVIL.getHitSound(),
-        loot_table: "kubejs:archaeology/suspicious_depleted_dirt"
+        brushingFinishedSound: SoundType.ANVIL.getHitSound()
     }
 ];
 

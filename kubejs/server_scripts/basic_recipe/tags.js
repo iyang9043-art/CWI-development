@@ -380,6 +380,8 @@ ServerEvents.tags('block', event => {
   event.add('minecraft:sculk_replaceable_world_gen', 'kubejs:ashen_depleted_dirt')
   event.add('minecraft:moss_replaceable', 'kubejs:depleted_dirt')
   event.add('minecraft:moss_replaceable', 'kubejs:ashen_depleted_dirt')
+  event.add('minecraft:depleted_dirt', 'kubejs:depleted_dirt')
+  event.add('minecraft:depleted_dirt', 'kubejs:ashen_depleted_dirt')
 
 //steelArmor
 
