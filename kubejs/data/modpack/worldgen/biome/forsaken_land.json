@@ -49,7 +49,6 @@
       "modpack:striated_ores/bauxite",
       "modpack:striated_ores/cassiterite",
       "modpack:striated_ores/chalcocite",
-      "modpack:striated_ores/chromite",
       "modpack:striated_ores/galena",
       "modpack:striated_ores/magnesite",
       "modpack:striated_ores/halite",
@@ -90,7 +89,6 @@
       "modpack:natures/fallen_ash_log",
       "modpack:natures/dead_bush",
       "modpack:natures/dead_leaves",
-      "modpack:stones/ashen_depleted_dirt",
       "modpack:surfaces/stones"
     ]
   ],

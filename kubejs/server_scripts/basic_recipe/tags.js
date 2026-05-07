@@ -407,15 +407,43 @@ ServerEvents.tags('fluid', event => {
 
 //fluids
 
-  event.add('modpack:water', 'minecraft:water')
-  event.add('modpack:water', 'kubejs:distilled_water')
+  event.add('modpack:water', 
+    [
+      'minecraft:water',
+      'kubejs:distilled_water'
+    ]
+  )
 
   event.removeAll('c:water')
   event.removeAll('minecraft:water')
-  event.add('c:water', 'minecraft:water')
-  event.add('c:water', 'minecraft:flowing_water')
-  event.add('minecraft:water', 'minecraft:water')
-  event.add('minecraft:water', 'minecraft:flowing_water')
+  
+  event.add('c:water', 
+    [
+      'minecraft:water', 
+      'minecraft:flowing_water'
+    ]
+  )
+
+  event.add('minecraft:water', 
+    [
+      'minecraft:water', 
+      'minecraft:flowing_water'
+    ]
+  )
+
+//fuel
+
+  event.add('create_sa:fuel_fluid', 
+    [
+      "minecraft:lava",
+      "createdieselgenerators:gasoline",
+      "createdieselgenerators:plant_oil",
+      "createdieselgenerators:diesel",
+      "createdieselgenerators:biodiesel"
+    ]
+  )
+
+  event.add('create_sa:water_fluid', 'kubejs:distilled_water')
 
 })
 

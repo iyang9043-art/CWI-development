@@ -140,6 +140,23 @@ ServerEvents.recipes(event => {
     "type": "create:item_application",
     "ingredients": [
       {
+        "item": "kubejs:broken_ash_log"
+      },
+      {
+        "tag": "minecraft:axes"
+      }
+    ],
+    "results": [
+      {
+        "item": "kubejs:stripped_broken_ash_log"
+      }
+    ]
+  })
+
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
         "item": "kubejs:burnt_log"
       },
       {
@@ -149,6 +166,23 @@ ServerEvents.recipes(event => {
     "results": [
       {
         "item": "kubejs:stripped_burnt_log"
+      }
+    ]
+  })
+
+  event.custom({
+    "type": "create:item_application",
+    "ingredients": [
+      {
+        "item": "kubejs:broken_burnt_log"
+      },
+      {
+        "tag": "minecraft:axes"
+      }
+    ],
+    "results": [
+      {
+        "item": "kubejs:stripped_broken_burnt_log"
       }
     ]
   })

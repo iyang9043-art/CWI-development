@@ -596,7 +596,7 @@ ServerEvents.recipes(event => {
   )
 
   event.shaped(
-    Item.of('create_factory_logistics:jar_packager'),
+    Item.of('fluid:can_filler'),
     [
       ' A ',
       'ABA',
